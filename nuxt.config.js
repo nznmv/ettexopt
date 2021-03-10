@@ -5,6 +5,9 @@ module.exports = {
 	generate: {
 		dir : '.dist'
 	},
+	router: {
+		base: '/ettexopt_landing/'
+	},
 	build: {
 		publicPath: '/ettexopt'
 	},

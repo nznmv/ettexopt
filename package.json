@@ -1,14 +1,15 @@
 {
-  "name": "frontend_nuxt",
+  "name": "ettexopt_landing",
   "version": "0.0.1",
-  "description": "Vue + Nuxt setup for new version of Toplyvo.UA app",
+  "description": "ettexopt landing",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nuxt --spa",
-    "build": "nuxt build --spa && nuxt export --spa && gulp release"
+    "build": "nuxt build --spa && nuxt export --spa && gulp release",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
-  "author": "Ihor Shamrai @ Toplyvo.UA",
+  "author": "Sasha Neznamov",
   "license": "ISC",
   "dependencies": {
     "@bachdgvn/vue-otp-input": "^1.0.8",

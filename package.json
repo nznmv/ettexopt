@@ -1,0 +1,38 @@
+{
+  "name": "frontend_nuxt",
+  "version": "0.0.1",
+  "description": "Vue + Nuxt setup for new version of Toplyvo.UA app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nuxt --spa",
+    "build": "nuxt build --spa && nuxt export --spa && gulp release"
+  },
+  "author": "Ihor Shamrai @ Toplyvo.UA",
+  "license": "ISC",
+  "dependencies": {
+    "@bachdgvn/vue-otp-input": "^1.0.8",
+    "@chenfengyuan/vue-qrcode": "^1.0.2",
+    "@dmaksimovic/vue-countdown": "^1.0.0",
+    "@mathieustan/vue-datepicker": "^0.2.6",
+    "@nuxtjs/axios": "^5.11.0",
+    "debounce": "^1.2.0",
+    "gulp": "^4.0.2",
+    "node-sass": "^4.14.1",
+    "nuxt": "^2.13.0",
+    "qrcode": "^1.4.4",
+    "qrcode.vue": "^3.2.2",
+    "sass-loader": "^8.0.2",
+    "select2": "^4.0.13",
+    "sweet-modal-vue": "^2.0.0",
+    "v-mask": "^2.2.4",
+    "vue": "^2.6.12",
+    "vue-carousel": "^0.18.0"
+  },
+  "devDependencies": {
+    "@chenfengyuan/vue-countdown": "^1.1.5",
+    "@nuxt/types": "^2.14.12",
+    "babel-plugin-component": "^1.1.1",
+    "vuex": "^3.6.2"
+  }
+}

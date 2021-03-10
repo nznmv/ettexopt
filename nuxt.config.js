@@ -1,6 +1,7 @@
 module.exports = {
 	target: 'static',
 	runtimeCompiler: true,
+	components: true,
 	generate: {
 		dir : '.dist'
 	},

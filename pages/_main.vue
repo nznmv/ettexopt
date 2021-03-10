@@ -1,6 +1,8 @@
 <template>
 	<div>
-		<Header />
+		<Header
+			:text="selected_text_config.header"
+		/>
 		<div class="dot"></div>
 		<div class="dot"></div>
 		<div class="dot"></div>
@@ -14,23 +16,67 @@
 		<div class="dot"></div>
 		<div class="dot"></div>
 		<div class="dot"></div>
+		<a href="tel:11111" class="callback"></a>
 	</div>
 </template>
 
 <script>
-	import Header from '../components/Header';
+import {mapActions, mapState} from 'vuex';
+
 	export default {
 		name: "_main",
-		components: {
-			Header,
+		data() {
+			return {
+			}
+		},
+		computed: {
+			...mapState(['selected_text_config']),
+		},
+		methods: {
+			...mapActions(['setTextConfig']),
+		},
+		mounted() {
+			this.setTextConfig();
 		}
 
-}
+	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "styles/components/imports/variables";
 	.dot {
 		height: 300px;
 		background: antiquewhite;
+	}
+
+	.callback {
+		width: 4em;
+		height: 4em;
+		border-radius: 3em;
+		background: $purpleLight;
+		position: fixed;
+		bottom: 3em;
+		right: 3em;
+		cursor: pointer;
+
+		&:after {
+			content: '';
+			background: url('/icon/callback.svg') center no-repeat;
+			width: 3em;
+			height: 3em;
+			position: absolute;
+			left: 0.5em;
+			top: 0.5em;
+			transition: 0.3s;
+		}
+
+		&:hover {
+			background: $purpleMedium;
+
+			&:after {
+				transform: rotate(-90deg);
+
+			}
+		}
 	}
 </style>

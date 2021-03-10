@@ -3,22 +3,36 @@
 		<div class="logo"></div>
 		<div class="menu">
 			<ul class="navigation">
-				<li><a href="">О ТОВАРЕ</a></li>
-				<li><a href="">ПРИЕМУЩЕСТВА</a></li>
-				<li><a href="">ВИДЕООБЗОРЫ</a></li>
-				<li><a href="">СОТРУДНИЧЕСТВО</a></li>
+				<li><a href="">{{ text.aboutProduct }}</a></li>
+				<li><a href="">{{ text.advantages }}</a></li>
+				<li><a href="">{{ text.review }}</a></li>
+				<li><a href="">{{ text.cooperation }}</a></li>
 			</ul>
 			<div class="additional">
-				<div class="callback"></div>
+				<LanguageChanger
+					:options="['ру', 'укр']"
+					:default="'ру'"
+					class="select"
+					@input="setTextConfig($event)"
+				/>
 			</div>
 		</div>
 	</header>
 </template>
 
 <script>
-export default {
-name: "Header"
-}
+	import LanguageChanger from '@/components/LanguageChanger';
+	import {mapActions} from 'vuex';
+	export default {
+		name: "Header",
+		components: {LanguageChanger},
+		props: {
+			text: Object,
+		},
+		methods: {
+			...mapActions(['setTextConfig']),
+		}
+	}
 </script>
 
 <style lang="scss" scoped>
@@ -41,20 +55,21 @@ name: "Header"
 
 		.menu {
 			display: flex;
+			align-items: center;
 
 			.navigation {
 				display: flex;
 				justify-content: space-between;
-				width: 39em;
+				width: 31em;
 				color: $purple;
 				font-family: $loadedFamilyMedium;
 				font-size: 1.25em;
 				line-height: 2.75em;
 
 				&>li {
-
 					&>a {
 						text-decoration: none;
+						text-transform: uppercase;
 
 						&:visited {
 							color: $purple;
@@ -64,19 +79,7 @@ name: "Header"
 			}
 
 			.additional {
-				width: 8em;
-
-				.callback {
-					width: 3em;
-					height: 3em;
-					border-radius: 3em;
-					background: $purple;
-					opacity: 10%;
-
-					position: fixed;
-					top: 0;
-					right: 0;
-				}
+				margin-left: 3em;
 			}
 
 

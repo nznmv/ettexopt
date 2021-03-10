@@ -27,7 +27,8 @@
     "sweet-modal-vue": "^2.0.0",
     "v-mask": "^2.2.4",
     "vue": "^2.6.12",
-    "vue-carousel": "^0.18.0"
+    "vue-carousel": "^0.18.0",
+    "vue-select": "^3.11.2"
   },
   "devDependencies": {
     "@chenfengyuan/vue-countdown": "^1.1.5",

@@ -64,6 +64,7 @@ export default {
 	outline: none;
 	line-height: 2em;
 	cursor: pointer;
+	z-index: 10;
 
 	.selected {
 		background-color: $purple;

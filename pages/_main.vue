@@ -1,8 +1,7 @@
 <template>
 	<div>
-		<Header
-			:text="selected_text_config.header"
-		/>
+		<Header/>
+		<Ads/>
 		<div class="dot"></div>
 		<div class="dot"></div>
 		<div class="dot"></div>
@@ -21,29 +20,19 @@
 </template>
 
 <script>
-import {mapActions, mapState} from 'vuex';
+import {mapActions} from 'vuex';
 
 	export default {
 		name: "_main",
-		data() {
-			return {
-			}
-		},
-		computed: {
-			...mapState(['selected_text_config']),
-		},
 		methods: {
 			...mapActions(['setTextConfig']),
 		},
-		mounted() {
-			this.setTextConfig();
-		}
-
 	}
 </script>
 
 <style lang="scss" scoped>
-@import "styles/components/imports/variables";
+	@import "styles/components/imports/variables";
+
 	.dot {
 		height: 300px;
 		background: antiquewhite;

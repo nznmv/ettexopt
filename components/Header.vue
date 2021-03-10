@@ -1,12 +1,12 @@
 <template>
-	<header class="header">
+	<div class="header">
 		<div class="logo"></div>
 		<div class="menu">
 			<ul class="navigation">
-				<li><a href="">{{ text.aboutProduct }}</a></li>
-				<li><a href="">{{ text.advantages }}</a></li>
-				<li><a href="">{{ text.review }}</a></li>
-				<li><a href="">{{ text.cooperation }}</a></li>
+				<li><a href="">{{ getHeaderText.aboutProduct }}</a></li>
+				<li><a href="">{{ getHeaderText.advantages }}</a></li>
+				<li><a href="">{{ getHeaderText.review }}</a></li>
+				<li><a href="">{{ getHeaderText.cooperation }}</a></li>
 			</ul>
 			<div class="additional">
 				<LanguageChanger
@@ -17,21 +17,21 @@
 				/>
 			</div>
 		</div>
-	</header>
+	</div>
 </template>
 
 <script>
 	import LanguageChanger from '@/components/LanguageChanger';
-	import {mapActions} from 'vuex';
+	import {mapActions, mapGetters, mapState} from 'vuex';
 	export default {
 		name: "Header",
 		components: {LanguageChanger},
-		props: {
-			text: Object,
-		},
 		methods: {
 			...mapActions(['setTextConfig']),
-		}
+		},
+		computed: {
+			...mapGetters(['getHeaderText']),
+		},
 	}
 </script>
 
@@ -70,6 +70,10 @@
 					&>a {
 						text-decoration: none;
 						text-transform: uppercase;
+
+						&:hover {
+							text-decoration: underline;
+						}
 
 						&:visited {
 							color: $purple;

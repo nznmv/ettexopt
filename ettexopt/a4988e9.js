@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{202:function(n,o,t){"use strict";t.r(o),t.d(o,"main",(function(){return main}));var main={head:{aboutProduct:"про товар",advantages:"переваги",review:"відео огляд",cooperation:"співробітництво"},ads:{aboutUs:"Ми офіційний дистриб'ютор дрібної побутової техніки та посуду"},buttons:{contactUs:"Зв'язатися з нами"}}}}]);

@@ -11,10 +11,13 @@
 				<img src="/images/adsBackground.jpg" alt="kitchen" class="image">
 			</div>
 		</agile>
-		<div class="content">
-			<p class="">
-				{{getAdsText.aboutUs}}
-			</p>
+		<div class="content-wrapper">
+			<div class="content">
+				<p class="title">
+					{{getAdsText.aboutUs}}
+				</p>
+				<a href="" class="button">{{ getButtonText.contactUs }}</a>
+			</div>
 		</div>
 	</div>
 
@@ -30,7 +33,7 @@ export default {
 		agile: VueAgile
 	},
 	computed: {
-		...mapGetters(['getAdsText']),
+		...mapGetters(['getAdsText', 'getButtonText']),
 	},
 }
 </script>
@@ -38,36 +41,76 @@ export default {
 <style lang="scss">
 @import "styles/components/imports/variables";
 
-	.content {
+	.content-wrapper {
 		background: $purpleOP86;
 		width: 50vw;
-		height: 42.5em;
+		height: 39.125em;
 		position: absolute;
 		top: 8.125em;
 		z-index: 3;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		.content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 22.375em;
+			margin-right: 3em;
+
+			.title {
+				font-family: $loadedFamilyMedium;
+				font-size: 2.25em;
+				line-height: 1.35em;
+				color: $white;
+				max-width: 14em;
+			}
+
+			.button {
+				background: $white;
+				width: 13em;
+				padding: 0 0.75em;
+				color: $purple;
+				font-family: $loadedFamilyMedium;
+				font-size: 1.25em;
+				line-height: 2.75em;
+				text-decoration: none;
+				text-transform: uppercase;
+				position: relative;
+
+				&:before {
+					content: '';
+					background: url('/icon/arrow.svg') center no-repeat;
+					width: 2em;
+					height: 1em;
+					position: absolute;
+					right: 0.75em;
+					top: 50%;
+					transform: translateY(-0.5em);
+				}
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+				&:visited {
+					color: $purple;
+				}
+			}
+		}
 	}
+
 	.agile{
 		width: 100%;
-		height: 42.5em;
+		height: 39.125em;
 		position: relative;
 		background: $purpleOP86;
-		z-index: 1;
-
-		//&:before {
-		//	content: '';
-		//	width: 50%;
-		//	height: 100%;
-		//	background: $purpleOP86;
-		//	position: absolute;
-		//	top: 0;
-		//	left: 0;
-		//	z-index: 2;
-		//}
 
 		&__nav-button {
 			background: transparent;
 			border: none;
-			color: #000;
+			color: $whiteOP28;
 			cursor: pointer;
 			font-size: 24px;
 			height: 100%;
@@ -75,9 +118,10 @@ export default {
 			top: 0;
 			transition-duration: .3s;
 			width: 80px;
+			z-index: 4;
 
 			&:hover {
-				background-color: rgba(#000, .5);
+				background-color: rgba(#000, .3);
 				opacity: 1;
 			}
 			&--prev {
@@ -93,16 +137,20 @@ export default {
 			bottom: 10px;
 			left: 50%;
 			position: absolute;
-			transform: translateX(-50%);
+			transform: translate(-620%, -2600%);
+			display: flex;
+			justify-content: space-between;
+			z-index: 4;
 		}
 
 
 		&__dot {
 			margin: 0 10px;
+			position: relative;
 
 			button {
-				background-color: #362D5F;
-				border: 1px solid #fff;
+				border: none;
+				background-color: $whiteOP28;
 				border-radius: 50%;
 				cursor: pointer;
 				display: block;
@@ -115,9 +163,18 @@ export default {
 				width: 10px;
 			}
 
+			&:before {
+				content: '';
+				position: absolute;
+				width: 1.5em;
+				height: 1.5em;
+				top: -6px;
+				left: -6px;
+			}
+
 			&--current, &:hover {
 				button {
-					background-color: #362D5F;
+					background-color: $white;
 				}
 			}
 		}
@@ -140,7 +197,7 @@ export default {
 
 			.image {
 				object-fit: cover;
-				height: 42.5em;
+				height: 39.125em;
 				width: 100%;
 			}
 		}

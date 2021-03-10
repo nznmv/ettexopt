@@ -9,6 +9,9 @@ export const getters = {
 	},
 	getAdsText(state) {
 		return state.selected_text_config.ads;
+	},
+	getButtonText(state) {
+		return state.selected_text_config.buttons;
 	}
 };
 export const mutations = {

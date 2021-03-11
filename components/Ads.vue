@@ -1,6 +1,11 @@
 <template>
-	<div>
-		<agile>
+	<div class="ads">
+		<agile
+			:autoplay="true"
+			:autoplay-speed="5000"
+			:pause-on-hover="true"
+			:speed="500"
+		>
 			<div class="slide">
 				<img src="/images/adsBackground.jpg" alt="kitchen" class="image">
 			</div>
@@ -24,14 +29,10 @@
 </template>
 
 <script>
-import { VueAgile } from 'vue-agile'
 import {mapGetters} from 'vuex';
 
 export default {
 	name: "Ads",
-	components: {
-		agile: VueAgile
-	},
 	computed: {
 		...mapGetters(['getAdsText', 'getButtonText']),
 	},
@@ -40,7 +41,7 @@ export default {
 
 <style lang="scss">
 @import "styles/components/imports/variables";
-
+.ads {
 	.content-wrapper {
 		background: $purpleOP86;
 		width: 50vw;
@@ -189,7 +190,6 @@ export default {
 				max-width: 68.75em;
 				height: 100%;
 				margin:0 auto;
-				border: 1px solid red;
 				z-index: 4;
 				position: absolute;
 				top: 0;
@@ -201,6 +201,7 @@ export default {
 				width: 100%;
 			}
 		}
+	}
 }
 
 </style>

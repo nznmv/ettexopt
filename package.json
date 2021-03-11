@@ -1,13 +1,14 @@
 {
-  "name": "ettexopt_landing",
+  "name": "ettexopt",
   "version": "0.0.1",
-  "description": "ettexopt landing",
+  "description": "ettexopt",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nuxt --spa",
     "build": "nuxt build --spa && nuxt export --spa && gulp release",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "gh-pages -d .dist",
+    "generate": "nuxt generate"
   },
   "author": "Sasha Neznamov",
   "license": "ISC",
@@ -36,6 +37,7 @@
     "@chenfengyuan/vue-countdown": "^1.1.5",
     "@nuxt/types": "^2.14.12",
     "babel-plugin-component": "^1.1.1",
+    "gh-pages": "^3.1.0",
     "vuex": "^3.6.2"
   }
 }

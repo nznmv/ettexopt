@@ -2,11 +2,12 @@ module.exports = {
 	target: 'static',
 	runtimeCompiler: true,
 	components: true,
+	mode: 'spa',
 	generate: {
 		dir : '.dist'
 	},
 	router: {
-		base: '/ettexopt_landing/'
+		base: '/ettexopt/'
 	},
 	build: {
 		publicPath: '/ettexopt'

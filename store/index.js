@@ -12,6 +12,9 @@ export const getters = {
 	},
 	getButtonText(state) {
 		return state.selected_text_config.buttons;
+	},
+	getBrandsText(state) {
+		return state.selected_text_config.brands;
 	}
 };
 export const mutations = {

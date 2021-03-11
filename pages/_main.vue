@@ -2,6 +2,7 @@
 	<div>
 		<Header/>
 		<Ads/>
+		<Brands/>
 		<div class="dot"></div>
 		<div class="dot"></div>
 		<div class="dot"></div>
@@ -36,6 +37,10 @@ import {mapActions} from 'vuex';
 	.dot {
 		height: 300px;
 		background: antiquewhite;
+
+		&:first-child {
+			background: white;
+		}
 	}
 
 	.callback {

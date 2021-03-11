@@ -3,10 +3,10 @@
 		<div class="logo"></div>
 		<div class="menu">
 			<ul class="navigation">
-				<li><a href="">{{ getHeaderText.aboutProduct }}</a></li>
-				<li><a href="">{{ getHeaderText.advantages }}</a></li>
-				<li><a href="">{{ getHeaderText.review }}</a></li>
-				<li><a href="">{{ getHeaderText.cooperation }}</a></li>
+				<li><a href="#aboutProducts">{{ getHeaderText.aboutProduct }}</a></li>
+				<li><a href="#advantages">{{ getHeaderText.advantages }}</a></li>
+				<li><a href="#review">{{ getHeaderText.review }}</a></li>
+				<li><a href="#cooperation">{{ getHeaderText.cooperation }}</a></li>
 			</ul>
 			<div class="additional">
 				<LanguageChanger
@@ -75,7 +75,7 @@
 							text-decoration: underline;
 						}
 
-						&:visited {
+						&:visited, &:active, &:link {
 							color: $purple;
 						}
 					}

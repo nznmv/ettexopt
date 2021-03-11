@@ -15,6 +15,9 @@ export const getters = {
 	},
 	getBrandsText(state) {
 		return state.selected_text_config.brands;
+	},
+	getAdvantagesText(state) {
+		return state.selected_text_config.advantages;
 	}
 };
 export const mutations = {

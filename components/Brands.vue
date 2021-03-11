@@ -1,5 +1,5 @@
 <template>
-	<div class="brands-wrapper">
+	<div class="brands-wrapper" id="aboutProducts">
 		<div class="brands">
 			<div class="brandsAbout">
 				<h2 class="title">{{getBrandsText.title}}</h2>
@@ -39,7 +39,7 @@
 		.brands {
 			max-width: 68.75em;
 			margin: 0 auto;
-			border-bottom: 2px solid #F2F2F2;
+			border-bottom: 2px solid $purpleMedium;
 			height: 27.7em;
 			display: flex;
 			flex-direction: column;
@@ -67,33 +67,33 @@
 			.brandsLinks {
 				display: flex;
 				justify-content: space-between;
-				align-items: center;
+				align-items: flex-end;
 				height: 5em;
 
 				.linkSatori {
 					width: 13em;
-					height: 100%;
+					height: 3em;
 					background: url('/images/satori.svg') center no-repeat;
 					background-size: 100%;
 					cursor: pointer;
 				}
 				.linkMagio {
 					width: 13em;
-					height: 100%;
+					height: 4em;
 					background: url('/images/magio.svg') center no-repeat;
 					background-size: 100%;
 					cursor: pointer;
 				}
 				.linkConbrio {
 					width: 13em;
-					height: 100%;
+					height: 5em;
 					background: url('/images/conbrio.svg') center no-repeat;
 					background-size: 100%;
 					cursor: pointer;
 				}
 				.linkVitek {
 					width: 13em;
-					height: 100%;
+					height: 3em;
 					background: url('/images/vitek.svg') center no-repeat;
 					background-size: 100%;
 					cursor: pointer;

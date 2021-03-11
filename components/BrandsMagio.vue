@@ -87,11 +87,11 @@ export default {
 	max-width: 68.75em;
 	margin: 0 auto;
 	padding-bottom: 3em;
-	border-bottom: 2px solid #F2F2F2;
+	border-bottom: 2px solid $purpleMedium;
 
 	.magioTitle {
 		height: 18em;
-		padding-bottom: 2em;
+		padding-bottom: 5em;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -104,7 +104,7 @@ export default {
 
 		.linkMagio {
 			width: 13em;
-			height: 100%;
+			height: 4em;
 			background: url('/images/magio.svg') center no-repeat;
 			background-size: 100%;
 		}

@@ -3,6 +3,7 @@
 		<Header/>
 		<Ads/>
 		<Brands/>
+		<Advantages/>
 		<div class="dot"></div>
 		<div class="dot"></div>
 		<div class="dot"></div>
@@ -52,6 +53,8 @@ import {mapActions} from 'vuex';
 		bottom: 3em;
 		right: 3em;
 		cursor: pointer;
+		mix-blend-mode: multiply;
+		z-index: 99;
 
 		&:after {
 			content: '';
@@ -66,10 +69,10 @@ import {mapActions} from 'vuex';
 
 		&:hover {
 			background: $purpleMedium;
+			mix-blend-mode: hard-light;
 
 			&:after {
 				transform: rotate(-90deg);
-
 			}
 		}
 	}

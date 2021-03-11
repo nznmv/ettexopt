@@ -74,7 +74,7 @@ export default {
 
 	.conbrioTitle {
 		height: 18em;
-		padding-bottom: 2em;
+		padding-bottom: 5em;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -87,7 +87,7 @@ export default {
 
 		.linkConbrio {
 			width: 13em;
-			height: 100%;
+			height: 5em;
 			background: url('/images/conbrio.svg') center no-repeat;
 			background-size: 100%;
 		}

@@ -49,7 +49,7 @@
 		.logo {
 			width: 7em;
 			height: 3.75em;
-			background: url('/icon/logo.svg') center no-repeat;
+			background: url('~/static/icon/logo.svg') center no-repeat;
 			cursor: pointer;
 		}
 

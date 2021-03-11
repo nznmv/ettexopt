@@ -7,13 +7,13 @@
 			:speed="500"
 		>
 			<div class="slide">
-				<img src="/images/adsBackground.jpg" alt="kitchen" class="image">
+				<img src="~/static/images/adsBackground.jpg" alt="kitchen" class="image">
 			</div>
 			<div class="slide">
-				<img src="/images/adsBackground.jpg" alt="kitchen" class="image">
+				<img src="~/static/images/adsBackground.jpg" alt="kitchen" class="image">
 			</div>
 			<div class="slide">
-				<img src="/images/adsBackground.jpg" alt="kitchen" class="image">
+				<img src="~/static/images/adsBackground.jpg" alt="kitchen" class="image">
 			</div>
 		</agile>
 		<div class="content-wrapper">

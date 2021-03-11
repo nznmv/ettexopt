@@ -1,5 +1,5 @@
 <template>
-	<div class="advantages-wrapper">
+	<div class="advantages-wrapper" id="advantages">
 		<div class="advantages">
 			<div class="advantagesSlider">
 				<h2 class="advantagesTitle">{{getAdvantagesText.title}}</h2>
@@ -78,22 +78,22 @@ name: "Advantages",
 			},
 
 			slides: [
-				'/images/magio/1.JPG',
-				'/images/magio/2.JPG',
-				'/images/magio/3.JPG',
-				'/images/magio/4.JPG',
-				'/images/magio/5.JPG',
-				'/images/magio/6.JPG',
-				'/images/magio/7.JPG',
-				'/images/magio/8.JPG',
-				'/images/magio/9.JPG',
-				'/images/magio/10.JPG',
-				'/images/magio/11.JPG',
-				'/images/magio/12.JPG',
-				'/images/magio/13.JPG',
-				'/images/magio/14.JPG',
-				'/images/magio/15.JPG',
-				'/images/magio/16.JPG',
+				'~/static/images/magio/1.JPG',
+				'~/static/images/magio/2.JPG',
+				'~/static/images/magio/3.JPG',
+				'~/static/images/magio/4.JPG',
+				'~/static/images/magio/5.JPG',
+				'~/static/images/magio/6.JPG',
+				'~/static/images/magio/7.JPG',
+				'~/static/images/magio/8.JPG',
+				'~/static/images/magio/9.JPG',
+				'~/static/images/magio/10.JPG',
+				'~/static/images/magio/11.JPG',
+				'~/static/images/magio/12.JPG',
+				'~/static/images/magio/13.JPG',
+				'~/static/images/magio/14.JPG',
+				'~/static/images/magio/15.JPG',
+				'~/static/images/magio/16.JPG',
 			]
 		}
 

@@ -2,9 +2,10 @@ module.exports = {
 	target: 'static',
 	runtimeCompiler: true,
 	components: true,
-	mode: 'spa',
+	mode: 'universal',
 	generate: {
-		dir : '.dist'
+		dir : '.dist',
+		fallback: 'index.html'
 	},
 	router: {
 		base: '/ettexopt/'

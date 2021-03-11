@@ -73,28 +73,28 @@
 				.linkSatori {
 					width: 13em;
 					height: 3em;
-					background: url('/images/satori.svg') center no-repeat;
+					background: url('~/static/images/satori.svg') center no-repeat;
 					background-size: 100%;
 					cursor: pointer;
 				}
 				.linkMagio {
 					width: 13em;
 					height: 4em;
-					background: url('/images/magio.svg') center no-repeat;
+					background: url('~/static/images/magio.svg') center no-repeat;
 					background-size: 100%;
 					cursor: pointer;
 				}
 				.linkConbrio {
 					width: 13em;
 					height: 5em;
-					background: url('/images/conbrio.svg') center no-repeat;
+					background: url('~/static/images/conbrio.svg') center no-repeat;
 					background-size: 100%;
 					cursor: pointer;
 				}
 				.linkVitek {
 					width: 13em;
 					height: 3em;
-					background: url('/images/vitek.svg') center no-repeat;
+					background: url('~/static/images/vitek.svg') center no-repeat;
 					background-size: 100%;
 					cursor: pointer;
 				}

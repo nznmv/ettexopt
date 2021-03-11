@@ -12,46 +12,46 @@
 			:speed="700"
 		>
 			<div class="slide">
-				<img src="/images/satori/1.JPG" alt="product photo" >
+				<img src="~/static/images/satori/1.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/satori/2.JPG" alt="product photo">
+				<img src="~/static/images/satori/2.JPG" alt="product photo">
 			</div>
 			<div class="slide">
-				<img src="/images/satori/3.JPG" alt="product photo" >
+				<img src="~/static/images/satori/3.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/satori/4.JPG" alt="product photo" >
+				<img src="~/static/images/satori/4.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/satori/5.JPG" alt="product photo" >
+				<img src="~/static/images/satori/5.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/satori/6.JPG" alt="product photo" >
+				<img src="~/static/images/satori/6.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/satori/7.JPG" alt="product photo" >
+				<img src="~/static/images/satori/7.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/satori/8.JPG" alt="product photo" >
+				<img src="~/static/images/satori/8.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/satori/9.JPG" alt="product photo" >
+				<img src="~/static/images/satori/9.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/satori/10.JPG" alt="product photo" >
+				<img src="~/static/images/satori/10.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/satori/11.JPG" alt="product photo" >
+				<img src="~/static/images/satori/11.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/satori/12.JPG" alt="product photo" >
+				<img src="~/static/images/satori/12.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/satori/13.JPG" alt="product photo" >
+				<img src="~/static/images/satori/13.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/satori/14.JPG" alt="product photo" >
+				<img src="~/static/images/satori/14.JPG" alt="product photo" >
 			</div>
 		</agile>
 	</div>
@@ -93,7 +93,7 @@ export default {
 		.linkSatori {
 			width: 13em;
 			height: 3em;
-			background: url('/images/satori.svg') center no-repeat;
+			background: url('~/static/images/satori.svg') center no-repeat;
 			background-size: 100%;
 		}
 	}

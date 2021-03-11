@@ -12,58 +12,58 @@
 			:speed="700"
 		>
 			<div class="slide">
-				<img src="/images/magio/1.JPG" alt="product photo" >
+				<img src="~/static/images/magio/1.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/2.JPG" alt="product photo">
+				<img src="~/static/images/magio/2.JPG" alt="product photo">
 			</div>
 			<div class="slide">
-				<img src="/images/magio/3.JPG" alt="product photo" >
+				<img src="~/static/images/magio/3.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/4.JPG" alt="product photo" >
+				<img src="~/static/images/magio/4.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/5.JPG" alt="product photo" >
+				<img src="~/static/images/magio/5.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/6.JPG" alt="product photo" >
+				<img src="~/static/images/magio/6.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/7.JPG" alt="product photo" >
+				<img src="~/static/images/magio/7.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/8.JPG" alt="product photo" >
+				<img src="~/static/images/magio/8.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/9.JPG" alt="product photo" >
+				<img src="~/static/images/magio/9.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/10.JPG" alt="product photo" >
+				<img src="~/static/images/magio/10.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/11.JPG" alt="product photo" >
+				<img src="~/static/images/magio/11.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/12.JPG" alt="product photo" >
+				<img src="~/static/images/magio/12.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/13.JPG" alt="product photo" >
+				<img src="~/static/images/magio/13.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/14.JPG" alt="product photo" >
+				<img src="~/static/images/magio/14.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/15.JPG" alt="product photo" >
+				<img src="~/static/images/magio/15.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/16.JPG" alt="product photo" >
+				<img src="~/static/images/magio/16.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/17.JPG" alt="product photo" >
+				<img src="~/static/images/magio/17.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/magio/18.JPG" alt="product photo" >
+				<img src="~/static/images/magio/18.JPG" alt="product photo" >
 			</div>
 		</agile>
 	</div>
@@ -105,7 +105,7 @@ export default {
 		.linkMagio {
 			width: 13em;
 			height: 4em;
-			background: url('/images/magio.svg') center no-repeat;
+			background: url('~/static/images/magio.svg') center no-repeat;
 			background-size: 100%;
 		}
 	}

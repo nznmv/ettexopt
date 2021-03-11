@@ -12,43 +12,43 @@
 			:speed="700"
 		>
 			<div class="slide">
-				<img src="/images/conbrio/1.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/1.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/conbrio/2.JPG" alt="product photo">
+				<img src="~/static/images/conbrio/2.JPG" alt="product photo">
 			</div>
 			<div class="slide">
-				<img src="/images/conbrio/3.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/3.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/conbrio/4.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/4.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/conbrio/5.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/5.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/conbrio/6.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/6.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/conbrio/7.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/7.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/conbrio/8.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/8.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/conbrio/10.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/10.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/conbrio/11.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/11.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/conbrio/12.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/12.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/conbrio/13.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/13.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="/images/conbrio/14.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/14.JPG" alt="product photo" >
 			</div>
 		</agile>
 	</div>
@@ -88,7 +88,7 @@ export default {
 		.linkConbrio {
 			width: 13em;
 			height: 5em;
-			background: url('/images/conbrio.svg') center no-repeat;
+			background: url('~/static/images/conbrio.svg') center no-repeat;
 			background-size: 100%;
 		}
 	}

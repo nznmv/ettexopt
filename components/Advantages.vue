@@ -1,39 +1,33 @@
 <template>
 	<div class="advantages-wrapper" id="advantages">
 		<div class="advantages">
-			<div class="advantagesSlider">
+			<div class="advantagesHeader">
 				<h2 class="advantagesTitle">{{getAdvantagesText.title}}</h2>
-				<agile
-					class="main"
-					ref="main"
-					:options="options1"
-					:as-nav-for="asNavFor1">
-					<div
-						class="slide"
-						v-for="(slide, index) in slides"
-						:key="index"
-						:class="`slide--${index}`"
-					>
-						<img :src="slide"/></div>
-				</agile>
-				<agile
-					class="thumbnails"
-					ref="thumbnails"
-					:options="options2"
-					:as-nav-for="asNavFor2"
-				>
-					<div
-						class="slide slide--thumbniail"
-						v-for="(slide, index) in slides"
-						:key="index"
-						:class="`slide--${index}`"
-						@click="$refs.thumbnails.goTo(index)"
-					>
-						<img :src="slide" />
-					</div>
-				</agile>
+				<div class="advantagesDivider"></div>
 			</div>
-			<div class="advantagesText"></div>
+			<div class="advantagesMain">
+				<div class="advantage">
+					<i class="icon-heart"></i>
+					<p>{{getAdvantagesText.text1}}</p>
+				</div>
+				<div class="advantage">
+					<i class="icon-guard"></i>
+					<p>{{getAdvantagesText.text2}}</p>
+				</div>
+				<div class="advantage">
+					<i class="icon-location"></i>
+					<p>{{getAdvantagesText.text3}}</p>
+				</div>
+				<div class="advantage">
+					<i class="icon-part"></i>
+					<p>{{getAdvantagesText.text4}}</p>
+				</div>
+				<div class="advantage">
+					<i class="icon-rocket"></i>
+					<p>{{getAdvantagesText.text5}}</p>
+				</div>
+			</div>
+			<a href="" class="button">{{ getButtonText.contactUs }}</a>
 		</div>
 	</div>
 </template>
@@ -43,68 +37,9 @@ import {mapGetters} from 'vuex';
 
 export default {
 name: "Advantages",
-	data () {
-		return {
-			asNavFor1: [],
-			asNavFor2: [],
-			options1: {
-				dots: false,
-				fade: true,
-				navButtons: false
-			},
-
-			options2: {
-				autoplay: true,
-				centerMode: true,
-				dots: false,
-				navButtons: false,
-				slidesToShow: 3,
-				responsive: [
-					{
-						breakpoint: 600,
-						settings: {
-							slidesToShow: 5
-						}
-					},
-
-					{
-						breakpoint: 1000,
-						settings: {
-							navButtons: true
-						}
-					}
-				]
-
-			},
-
-			slides: [
-				'~/static/images/magio/1.JPG',
-				'~/static/images/magio/2.JPG',
-				'~/static/images/magio/3.JPG',
-				'~/static/images/magio/4.JPG',
-				'~/static/images/magio/5.JPG',
-				'~/static/images/magio/6.JPG',
-				'~/static/images/magio/7.JPG',
-				'~/static/images/magio/8.JPG',
-				'~/static/images/magio/9.JPG',
-				'~/static/images/magio/10.JPG',
-				'~/static/images/magio/11.JPG',
-				'~/static/images/magio/12.JPG',
-				'~/static/images/magio/13.JPG',
-				'~/static/images/magio/14.JPG',
-				'~/static/images/magio/15.JPG',
-				'~/static/images/magio/16.JPG',
-			]
-		}
-
-	},
 	computed: {
-		...mapGetters(['getAdvantagesText']),
+		...mapGetters(['getAdvantagesText', 'getButtonText']),
 	},
-	mounted () {
-		this.asNavFor1.push(this.$refs.thumbnails)
-		this.asNavFor2.push(this.$refs.main)
-	}
 }
 </script>
 
@@ -114,111 +49,98 @@ name: "Advantages",
 	.advantages-wrapper {
 		width: 100vw;
 		background: $purpleBackground;
-		height: 53em;
+		height: 40em;
 
 		.advantages {
 			max-width: 68.75em;
 			height: 100%;
 			margin:0 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			position: relative;
 
-
-			.advantagesSlider {
-				width: 50%;
-				height: 100%;
+			.advantagesHeader {
 				display: flex;
-				flex-direction: column;
-				justify-content: center;
+				justify-content: space-between;
+				align-items: center;
 
 				.advantagesTitle {
 					font-family: $loadedFamilyBold;
 					font-size: 3em;
 					color: $white;
-					margin-bottom: 1em;
+					line-height: 1em;
 				}
 
-				.main {
-					margin-bottom: 30px;
+				.advantagesDivider {
+					width: 50%;
+					height: 1px;
+					background: $whiteOP28;
+
 				}
-				.thumbnails {
-					margin: 0 -5px;
-					width: calc(100% + 10px);
-					.agile__nav-button {
-						position: absolute;
-						top: 50%;
-						transform: translateY(-50%);
-					}
-					.agile__nav-button--prev {
-						left: -45px;
-					}
-					.agile__nav-button--next {
-						right: -45px;
-					}
-				}
-				.agile__nav-button {
-					background: transparent;
-					display: none;
-					border: none;
-					color: #ccc;
-					cursor: pointer;
-					font-size: 24px;
-					transition-duration: 0.3s;
-					&:hover {
-						color: #888;
-					}
-				}
-				.agile__dot {
-					margin: 0 10px;
-					button {
-						background-color: #eee;
-						border: none;
-						border-radius: 50%;
-						cursor: pointer;
-						display: block;
-						height: 10px;
-						font-size: 0;
-						line-height: 0;
-						margin: 0;
-						padding: 0;
-						transition-duration: 0.3s;
-						width: 10px;
-					}
-					&:hover {
-						button {
-							background-color: #888;
-						}
-					}
-				}
-				.agile__dot--current {
-					button {
-						background-color: #888;
-					}
-				}
-				.slide {
-					align-items: center;
-					box-sizing: border-box;
-					color: #fff;
+			}
+
+			.advantagesMain {
+				display: flex;
+				justify-content: space-evenly;
+				flex-wrap: wrap;
+				margin-top: 5em;
+
+				.advantage {
+					width: 33%;
+					max-width: 17em;
+					height: 11em;
+					color: $white;
+					font-family: $loadedFamilyRegular;
+					font-size: 1.125em;
+					line-height: 1.35em;
+					text-align: center;
+
 					display: flex;
-					height: 450px;
-					justify-content: center;
-					img {
-						height: 100%;
-						object-fit: cover;
-						object-position: center;
-						width: 100%;
-					}
-				}
-				.slide--thumbniail {
-					cursor: pointer;
-					height: 100px;
-					padding: 0 5px;
-					opacity: 0.4;
-					transition: opacity 0.3s;
-					&:hover {
-						opacity: 1;
-					}
-				}
+					flex-direction: column;
+					align-items: center;
 
+					&:last-child {
+						width: 25em;
+						max-width: none;
+					}
+				}
+			}
+
+			.button {
+				position: absolute;
+				bottom: -1.4em;
+				right: 0;
 			}
 		}
 	}
+
+	.icon {
+		transition: 0.3s;
+
+		&-heart{
+			@include icon-create (heart, 4em);
+		}
+
+		&-callback{
+			@include icon-create (callback, 4em);
+		}
+
+		&-guard{
+			@include icon-create (guard, 4em);
+		}
+
+		&-location{
+			@include icon-create (location, 4em);
+		}
+
+		&-part{
+			@include icon-create (part, 4em);
+		}
+
+		&-rocket{
+			@include icon-create (rocket, 4em);
+		}
+	}
+
 </style>

@@ -20,3 +20,20 @@ $grid-breakpoints: (
 	xl: 1200px,
 	xxl: 1440px
 );
+
+
+//mixins
+
+@mixin icon-create($icon-name, $icons-size) {
+	&:before {
+		width: $icons-size;
+		height: $icons-size;
+		content: '';
+		display: inline-block;
+		background: url('~/static/icon/' + $icon-name + '.svg') no-repeat center;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}

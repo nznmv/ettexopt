@@ -6,15 +6,15 @@
 				<p class="subtitle">{{getBrandsText.about}}</p>
 			</div>
 			<div class="brandsLinks">
-				<a href="#satori" class="linkSatori"></a>
 				<a href="#magio" class="linkMagio"></a>
+				<a href="#satori" class="linkSatori"></a>
 				<a href="#conbrio" class="linkConbrio"></a>
 				<div class="linkVitek"></div>
 			</div>
 		</div>
-		<LazyBrandsMagio/>
-		<LazyBrandsSatori/>
-		<LazyBrandsConbrio/>
+		<BrandsMagio/>
+		<BrandsSatori/>
+		<BrandsConbrio/>
 	</div>
 
 </template>

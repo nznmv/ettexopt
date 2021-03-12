@@ -7,13 +7,16 @@
 			:speed="500"
 		>
 			<div class="slide">
-				<img src="~/static/images/adsBackground.jpg" alt="kitchen" class="image">
+				<img src="~/static/images/1.jpg" alt="kitchen" class="image">
 			</div>
 			<div class="slide">
-				<img src="~/static/images/adsBackground.jpg" alt="kitchen" class="image">
+				<img src="~/static/images/2.jpg" alt="kitchen" class="image">
 			</div>
 			<div class="slide">
-				<img src="~/static/images/adsBackground.jpg" alt="kitchen" class="image">
+				<img src="~/static/images/3.jpg" alt="kitchen" class="image">
+			</div>
+			<div class="slide">
+				<img src="~/static/images/4.jpg" alt="kitchen" class="image">
 			</div>
 		</agile>
 		<div class="content-wrapper">
@@ -67,38 +70,6 @@ export default {
 				color: $white;
 				max-width: 14em;
 			}
-
-			.button {
-				background: $white;
-				width: 13em;
-				padding: 0 0.75em;
-				color: $purple;
-				font-family: $loadedFamilyMedium;
-				font-size: 1.25em;
-				line-height: 2.75em;
-				text-decoration: none;
-				text-transform: uppercase;
-				position: relative;
-
-				&:before {
-					content: '';
-					background: url('/icon/arrow.svg') center no-repeat;
-					width: 2em;
-					height: 1em;
-					position: absolute;
-					right: 0.75em;
-					top: 50%;
-					transform: translateY(-0.5em);
-				}
-
-				&:hover {
-					text-decoration: underline;
-				}
-
-				&:visited {
-					color: $purple;
-				}
-			}
 		}
 	}
 
@@ -138,12 +109,11 @@ export default {
 			bottom: 10px;
 			left: 50%;
 			position: absolute;
-			transform: translate(-620%, -2600%);
+			transform: translate(-470%, -2600%);
 			display: flex;
 			justify-content: space-between;
 			z-index: 4;
 		}
-
 
 		&__dot {
 			margin: 0 10px;

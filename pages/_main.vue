@@ -58,7 +58,7 @@ import {mapActions} from 'vuex';
 
 		&:after {
 			content: '';
-			background: url('/icon/callback.svg') center no-repeat;
+			background: url('~/static/icon/callback.svg') center no-repeat;
 			width: 3em;
 			height: 3em;
 			position: absolute;

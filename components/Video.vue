@@ -11,228 +11,228 @@
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(1)"
 									alt="you tube videos screen"
 									:id="setVideoId(1)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(2)"
 									alt="you tube videos screen"
 									:id="setVideoId(2)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(3)"
 									alt="you tube videos screen"
 									:id="setVideoId(3)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(4)"
 									alt="you tube videos screen"
 									:id="setVideoId(4)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(5)"
 									alt="you tube videos screen"
 									:id="setVideoId(5)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(6)"
 									alt="you tube videos screen"
 									:id="setVideoId(6)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(7)"
 									alt="you tube videos screen"
 									:id="setVideoId(7)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(8)"
 									alt="you tube videos screen"
 									:id="setVideoId(8)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(9)"
 									alt="you tube videos screen"
 									:id="setVideoId(9)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(10)"
 									alt="you tube videos screen"
 									:id="setVideoId(10)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(11)"
 									alt="you tube videos screen"
 									:id="setVideoId(11)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(12)"
 									alt="you tube videos screen"
 									:id="setVideoId(12)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(13)"
 									alt="you tube videos screen"
 									:id="setVideoId(13)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
-							class="videoThumb"
+								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(14)"
 									alt="you tube videos screen"
 									:id="setVideoId(14)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(15)"
 									alt="you tube videos screen"
 									:id="setVideoId(15)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(16)"
 									alt="you tube videos screen"
 									:id="setVideoId(16)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(17)"
 									alt="you tube videos screen"
 									:id="setVideoId(17)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(18)"
 									alt="you tube videos screen"
 									:id="setVideoId(18)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
 						<div class="slide">
 							<div
 								class="videoThumb"
+								@click="showThisVideo"
 							>
 								<img
 									:src="selectVideo(19)"
 									alt="you tube videos screen"
 									:id="setVideoId(19)"
-									@click="showThisVideo"
 								>
 							</div>
 						</div>
@@ -241,20 +241,22 @@
 				<div class="smallVideos">
 					<div
 						class="videoThumb"
+						@click="showThisVideo"
 					>
 						<img
 							:src="selectVideo(20)"
 							alt="you tube videos screen"
-							:id="setVideoId(1)"
-							@click="showThisVideo"
+							:id="setVideoId(20)"
 						>
 					</div>
-					<div class="videoThumb">
+					<div
+						class="videoThumb"
+						@click="showThisVideo"
+					>
 						<img
 							:src="selectVideo(21)"
 							alt="you tube videos screen"
-							:id="setVideoId(2)"
-							@click="showThisVideo"
+							:id="setVideoId(21)"
 						>
 					</div>
 				</div>
@@ -287,8 +289,11 @@ export default {
 		},
 
 		showThisVideo(event) {
-			console.log(event)
-			this.setModalShow({modal: true, id:event.target.id});
+			if(event.target.nodeName === 'IMG') {
+				this.setModalShow({modal: true, id:event.target.id});
+			} else {
+				this.setModalShow({modal: true, id:event.target.childNodes[0].id});
+			}
 		}
 	},
 	computed: {
@@ -409,6 +414,7 @@ export default {
 							height: 1.5em;
 							top: -6px;
 							left: -6px;
+							z-index: auto;
 						}
 
 						&--current, &:hover {

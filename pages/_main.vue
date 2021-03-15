@@ -1,9 +1,13 @@
 <template>
-	<div>
+	<div
+		class="main"
+
+	>
 		<Header/>
 		<Ads/>
 		<Brands/>
 		<Advantages/>
+		<Video/>
 		<div class="dot"></div>
 		<div class="dot"></div>
 		<div class="dot"></div>
@@ -22,17 +26,20 @@
 </template>
 
 <script>
-import {mapActions} from 'vuex';
+import {mapActions, mapState} from 'vuex';
 
 	export default {
 		name: "_main",
+		computed: {
+			...mapState(['modal_show']),
+		},
 		methods: {
 			...mapActions(['setTextConfig']),
 		},
 	}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 	@import "styles/components/imports/variables";
 
 	.dot {
@@ -41,6 +48,17 @@ import {mapActions} from 'vuex';
 
 		&:first-child {
 			background: white;
+		}
+	}
+
+	.blockTitle {
+		color: $purple;
+		font-family: $loadedFamilyBold;
+		font-size: 3em;
+		line-height: 1.4em;
+
+		&White {
+			color: $white;
 		}
 	}
 

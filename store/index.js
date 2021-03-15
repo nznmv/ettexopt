@@ -2,7 +2,10 @@ import { main } from '@/config/ruText';
 
 export const state = () => ({
 	selected_text_config: main,
+	modal_show: false,
+	videoId: '',
 });
+
 export const getters = {
 	getHeaderText(state) {
 		return state.selected_text_config.head;
@@ -24,6 +27,12 @@ export const mutations = {
 	SET_CONFIG(state, value) {
 		state.selected_text_config = value;
 	},
+	SET_MODAL_SHOW(state, value) {
+		state.modal_show = value;
+	},
+	SET_VIDEO_ID(state, value) {
+		state.videoId = value;
+	},
 };
 export const actions = {
 	async setTextConfig({state, commit}, payload = 'ру') {
@@ -34,5 +43,10 @@ export const actions = {
 			let {main} = await import('@/config/uaText');
 			commit('SET_CONFIG', main)
 		}
+	},
+
+	setModalShow({state,commit}, payload) {
+		commit('SET_MODAL_SHOW', payload.modal);
+		commit('SET_VIDEO_ID', payload.id);
 	}
 };

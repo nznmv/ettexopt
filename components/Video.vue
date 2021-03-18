@@ -1,7 +1,7 @@
 <template>
-	<div class="videoReview-wrapper" >
+	<div class="videoReview-wrapper"  >
 		<div class="videoReview" >
-			<h2 class="blockTitle">Видеообзоры нашей продукции</h2>
+			<h2 class="blockTitle" id="review">Видеообзоры нашей продукции</h2>
 			<div class="videos-wrapper">
 				<div class="bigVideos">
 					<agile

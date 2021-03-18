@@ -25,6 +25,7 @@ $grid-breakpoints: (
 //mixins
 
 @mixin icon-create($icon-name, $icons-size) {
+	transition: all 0.3s ease-in;
 	&:before {
 		width: $icons-size;
 		height: $icons-size;

@@ -28,15 +28,18 @@ module.exports = {
 	],
 	head: {
 		title: 'ETTEXOPT - официальный дистрибьютор',
+		htmlAttrs: {
+			lang: 'ru'
+		},
 		meta: [
 			{ charset: 'utf-8' },
-			{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
+			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
+			{ name: "theme-color"}
 		],
 		link: [
 			{ rel: 'icon', type: 'image/png', href: '/icon/favicon.png' }
 		],
 	},
 	plugins: [
-
 	]
 };

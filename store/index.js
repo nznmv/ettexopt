@@ -21,7 +21,13 @@ export const getters = {
 	},
 	getAdvantagesText(state) {
 		return state.selected_text_config.advantages;
-	}
+	},
+	getCoopText(state) {
+		return state.selected_text_config.coop;
+	},
+	getFooterText(state) {
+		return state.selected_text_config.footer;
+	},
 };
 export const mutations = {
 	SET_CONFIG(state, value) {

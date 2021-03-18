@@ -7,6 +7,7 @@
 				<li><a href="#advantages">{{ getHeaderText.advantages }}</a></li>
 				<li><a href="#review">{{ getHeaderText.review }}</a></li>
 				<li><a href="#cooperation">{{ getHeaderText.cooperation }}</a></li>
+				<li><a href="#contacts">{{ getHeaderText.contact }}</a></li>
 			</ul>
 			<div class="additional">
 				<LanguageChanger
@@ -60,7 +61,7 @@
 			.navigation {
 				display: flex;
 				justify-content: space-between;
-				width: 31em;
+				width: 33em;
 				color: $purple;
 				font-family: $loadedFamilyMedium;
 				font-size: 1.25em;

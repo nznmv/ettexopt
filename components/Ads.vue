@@ -6,25 +6,37 @@
 			:pause-on-hover="true"
 			:speed="500"
 		>
-			<div class="slide">
-				<img src="~/static/images/1.jpg" alt="kitchen" class="image">
+			<div class="slide" >
+				<img
+					src="~/static/images/1.jpg"
+					alt="kitchen"
+					class="image"
+				>
 			</div>
 			<div class="slide">
-				<img src="~/static/images/2.jpg" alt="kitchen" class="image">
+				<img
+					src="~/static/images/2.jpg"
+					alt="kitchen"
+					class="image"
+				>
 			</div>
 			<div class="slide">
-				<img src="~/static/images/3.jpg" alt="kitchen" class="image">
-			</div>
-			<div class="slide">
-				<img src="~/static/images/4.jpg" alt="kitchen" class="image">
+				<img
+					src="~/static/images/3.jpg"
+					alt="kitchen"
+					class="image"
+				>
 			</div>
 		</agile>
+
 		<div class="content-wrapper">
 			<div class="content">
 				<p class="title">
 					{{getAdsText.aboutUs}}
 				</p>
-				<a href="" class="button">{{ getButtonText.contactUs }}</a>
+				<a href="#cooperation" class="button">
+					{{ getButtonText.contactUs }}
+				</a>
 			</div>
 		</div>
 	</div>
@@ -39,6 +51,11 @@ export default {
 	computed: {
 		...mapGetters(['getAdsText', 'getButtonText']),
 	},
+	methods: {
+		logger(e) {
+			console.log(e.target)
+		}
+	}
 }
 </script>
 
@@ -109,7 +126,7 @@ export default {
 			bottom: 10px;
 			left: 50%;
 			position: absolute;
-			transform: translate(-470%, -2600%);
+			transform: translate(-620%, -2600%);
 			display: flex;
 			justify-content: space-between;
 			z-index: 4;

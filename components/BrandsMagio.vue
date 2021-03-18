@@ -87,7 +87,7 @@ export default {
 	max-width: 68.75em;
 	margin: 0 auto;
 	padding-bottom: 3em;
-	border-bottom: 2px solid ;
+	border-bottom: 2px solid $purpleMedium ;
 
 	.magioTitle {
 		height: 18em;

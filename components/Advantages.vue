@@ -1,6 +1,6 @@
 <template>
-	<div class="advantages-wrapper" id="advantages">
-		<div class="advantages">
+	<div class="advantages-wrapper" >
+		<div class="advantages" id="advantages">
 			<div class="advantagesHeader">
 				<h2 class="advantagesTitle">{{getAdvantagesText.title}}</h2>
 				<div class="advantagesDivider"></div>
@@ -27,7 +27,7 @@
 					<p>{{getAdvantagesText.text5}}</p>
 				</div>
 			</div>
-			<a href="" class="button">{{ getButtonText.contactUs }}</a>
+			<a href="#cooperation" class="button">{{ getButtonText.contactUs }}</a>
 		</div>
 	</div>
 </template>

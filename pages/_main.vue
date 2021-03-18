@@ -8,20 +8,9 @@
 		<Brands/>
 		<Advantages/>
 		<Video/>
-		<div class="dot"></div>
-		<div class="dot"></div>
-		<div class="dot"></div>
-		<div class="dot"></div>
-		<div class="dot"></div>
-		<div class="dot"></div>
-		<div class="dot"></div>
-		<div class="dot"></div>
-		<div class="dot"></div>
-		<div class="dot"></div>
-		<div class="dot"></div>
-		<div class="dot"></div>
-		<div class="dot"></div>
-		<a href="tel:11111" class="callback"></a>
+		<Cooperation/>
+		<Footer/>
+		<a href="tel:+380677286148" class="callback"></a>
 	</div>
 </template>
 
@@ -59,6 +48,9 @@ import {mapActions, mapState} from 'vuex';
 
 		&White {
 			color: $white;
+			font-family: $loadedFamilyBold;
+			font-size: 3em;
+			line-height: 1.4em;
 		}
 	}
 

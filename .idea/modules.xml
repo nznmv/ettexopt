@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ettexopt_landing.iml" filepath="$PROJECT_DIR$/.idea/ettexopt_landing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ettexopt/.idea/ettexopt.iml" filepath="$PROJECT_DIR$/../ettexopt/.idea/ettexopt.iml" />
     </modules>
   </component>
 </project>

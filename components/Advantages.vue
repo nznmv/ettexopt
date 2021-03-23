@@ -47,11 +47,21 @@ name: "Advantages",
 
 <style lang="scss">
 	@import "styles/components/imports/variables";
+	@import "styles/components/imports/breakpoints";
 
 	.advantages-wrapper {
 		width: 100vw;
 		background: $purpleBackground;
 		height: 40em;
+
+		@include media-breakpoint-down($middle) {
+			height: 50em;
+		}
+
+		@include media-breakpoint-down($small) {
+			height: 64em;
+		}
+
 
 		.advantages {
 			max-width: 68.75em;
@@ -61,17 +71,30 @@ name: "Advantages",
 			flex-direction: column;
 			justify-content: center;
 			position: relative;
+			padding: 0 1em;
+
+			@include media-breakpoint-down($desktop-breakpoint) {
+				justify-content: space-evenly;
+			}
 
 			.advantagesHeader {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 
+				@include media-breakpoint-down($desktop-breakpoint) {
+					justify-content: center;
+				}
+
 				.advantagesTitle {
 					font-family: $loadedFamilyBold;
 					font-size: 3em;
 					color: $white;
 					line-height: 1em;
+
+					@include media-breakpoint-down($small) {
+						font-size: 2.5em;
+					}
 				}
 
 				.advantagesDivider {
@@ -79,6 +102,9 @@ name: "Advantages",
 					height: 1px;
 					background: $whiteOP28;
 
+					@include media-breakpoint-down($desktop-breakpoint) {
+						display: none;
+					}
 				}
 			}
 
@@ -88,9 +114,19 @@ name: "Advantages",
 				flex-wrap: wrap;
 				margin-top: 5em;
 
+				@include media-breakpoint-down($desktop-breakpoint) {
+					margin-top: 3em;
+				}
+
+				@include media-breakpoint-down($middle) {
+					margin-top: 0;
+					justify-content: flex-start;
+				}
+
 				.advantage {
 					width: 33%;
 					max-width: 17em;
+					min-width: 15em;
 					height: 11em;
 					color: $white;
 					font-family: $loadedFamilyRegular;
@@ -106,6 +142,30 @@ name: "Advantages",
 						width: 25em;
 						max-width: none;
 					}
+
+					@include media-breakpoint-down($desktop-breakpoint) {
+						height: 9em;
+					}
+
+					@include media-breakpoint-down($middle) {
+						flex-direction: row;
+						text-align: left;
+						max-width: none;
+						width: 100%;
+						height: 7em;
+					}
+
+					& > p {
+						@include media-breakpoint-down($middle) {
+							margin-left: 0.5em;
+						}
+					}
+
+					&:last-child {
+						@include media-breakpoint-down($small) {
+							margin-top: 2em;
+						}
+					}
 				}
 			}
 
@@ -113,6 +173,10 @@ name: "Advantages",
 				position: absolute;
 				bottom: -1.4em;
 				right: 0;
+
+				@include media-breakpoint-down($desktop-breakpoint) {
+					right: 1em;
+				}
 			}
 		}
 	}

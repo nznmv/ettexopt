@@ -1,72 +1,72 @@
 <template>
 	<div class="magio" id="magio">
-			<div class="magioTitle">
-				<p class="magioSubtitle">{{getBrandsText.magio}}</p>
-				<a class="linkMagio"></a>
-			</div>
-			<agile
-				:slidesToShow="3"
-				:autoplay="true"
-				:autoplay-speed="7000"
-				:pause-on-hover="true"
-				:speed="700"
-			>
-				<div class="slide">
-					<img src="~/static/images/magio/1.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/2.JPG" alt="product photo">
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/3.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/4.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/5.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/6.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/7.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/8.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/9.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/10.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/11.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/12.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/13.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/14.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/15.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/16.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/17.JPG" alt="product photo" >
-				</div>
-				<div class="slide">
-					<img src="~/static/images/magio/18.JPG" alt="product photo" >
-				</div>
-			</agile>
+		<div class="magioTitle">
+			<p class="magioSubtitle">{{getBrandsText.magio}}</p>
+			<a class="linkMagio"></a>
 		</div>
+		<agile
+			:slidesToShow="numberSlides"
+			:autoplay="true"
+			:autoplay-speed="7000"
+			:pause-on-hover="true"
+			:speed="700"
+		>
+			<div class="slide">
+				<img src="~/static/images/magio/1.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/2.JPG" alt="product photo">
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/3.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/4.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/5.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/6.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/7.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/8.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/9.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/10.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/11.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/12.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/13.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/14.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/15.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/16.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/17.JPG" alt="product photo" >
+			</div>
+			<div class="slide">
+				<img src="~/static/images/magio/18.JPG" alt="product photo" >
+			</div>
+		</agile>
+	</div>
 </template>
 
 <script>
@@ -77,16 +77,20 @@ export default {
 	computed: {
 		...mapGetters(['getBrandsText']),
 	},
+	props: {
+		numberSlides: Number,
+	}
 }
 </script>
 
 <style lang="scss">
 @import "styles/components/imports/variables";
+@import "styles/components/imports/breakpoints";
 
 .magio {
 	max-width: 68.75em;
 	margin: 0 auto;
-	padding-bottom: 3em;
+	padding: 0 1em 3em;
 	border-bottom: 2px solid $purpleMedium ;
 
 	.magioTitle {
@@ -96,10 +100,24 @@ export default {
 		justify-content: space-between;
 		align-items: center;
 
+		@include media-breakpoint-down($desktop-breakpoint) {
+			padding-bottom: 2em;
+		}
+
+		@include media-breakpoint-down($middle) {
+			height: 25em;
+			flex-direction: column-reverse;
+			justify-content: space-evenly;
+		}
+
 		.magioSubtitle {
 			font-size: 1.5em;
 			line-height: 1.4em;
 			max-width: 50%;
+
+			@include media-breakpoint-down($middle) {
+				max-width: 100%;
+			}
 		}
 
 		.linkMagio {
@@ -113,6 +131,14 @@ export default {
 		width: 100%;
 		height: 16.8em;
 		position: relative;
+
+		@include media-breakpoint-down($middle) {
+			height: 20em;
+		}
+
+		@include media-breakpoint-down($small) {
+			height: 18.5em;
+		}
 
 		&__nav-button {
 			background: transparent;
@@ -192,6 +218,10 @@ export default {
 			max-height: 16.8em;
 			width: 33.3%;
 			object-fit: contain;
+
+			@include media-breakpoint-down($middle) {
+				max-height: 20em;
+			}
 
 			& > img {
 				object-fit: cover;

@@ -15,9 +15,9 @@
 				<div class="linkVitek"></div>
 			</div>
 		</div>
-		<BrandsMagio/>
-		<LazyBrandsSatori/>
-		<LazyBrandsConbrio/>
+		<BrandsMagio :numberSlides="slideNumber"/>
+		<LazyBrandsSatori :numberSlides="slideNumber"/>
+		<LazyBrandsConbrio :numberSlides="slideNumber"/>
 	</div>
 
 </template>
@@ -29,12 +29,23 @@
 		name: "Brands",
 		computed: {
 			...mapGetters(['getBrandsText']),
+			slideNumber() {
+				console.log(window.screen.width)
+				switch (true) {
+					case(window.screen.width >= 992): return 3;
+					case(window.screen.width >= 768): return 2;
+					case(window.screen.width <= 768): return 1;
+				}
+
+			}
 		},
 	}
 </script>
 
 <style lang="scss">
 @import "styles/components/imports/variables";
+@import "styles/components/imports/breakpoints";
+
 	.brands-wrapper {
 		color: $purple;
 		font-family: $loadedFamilyRegular;
@@ -47,6 +58,15 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
+			padding:  0 1em;
+
+			@include media-breakpoint-down($desktop-breakpoint) {
+				height: 35em;
+			}
+
+			@include media-breakpoint-down($small) {
+				height: 30em;
+			}
 
 			.brandsAbout {
 				display: flex;
@@ -56,22 +76,48 @@
 				font-family: $loadedFamilyRegular;
 				font-size: 1.5em;
 				line-height: 1.4em;
+				flex-wrap: wrap;
 
 				.title {
 					font-family: $loadedFamilyBold;
 					font-size: 2em;
+
+					@include media-breakpoint-down($small) {
+						font-size: 1.7em;
+					}
+
+					@include media-breakpoint-down($desktop-breakpoint) {
+						margin-bottom: 1em;
+					}
 				}
 
 				.subtitle {
-					max-width: 23em;
+					max-width: 22em;
+
+					@include media-breakpoint-down($desktop-breakpoint) {
+						max-width: 100%;
+					}
 				}
 			}
 
 			.brandsLinks {
 				display: flex;
 				justify-content: space-between;
+				flex-wrap: wrap;
 				align-items: flex-end;
 				height: 5em;
+
+				@include media-breakpoint-down($desktop-breakpoint) {
+					justify-content: space-around;
+					height: 10em;
+				}
+				@include media-breakpoint-down($small) {
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+					height: 25em;
+					display: none;
+				}
 
 				.linkSatori {
 					width: 13em;
@@ -79,6 +125,13 @@
 					background: url('~/static/images/satori.svg') center no-repeat;
 					background-size: 100%;
 					cursor: pointer;
+					margin:  0.5em 1em;
+					@include media-breakpoint-down($desktop-breakpoint) {
+						background-size: 75%;
+					}
+					@include media-breakpoint-down($small) {
+						background-size: 100%;
+					}
 				}
 				.linkMagio {
 					width: 13em;
@@ -86,6 +139,14 @@
 					background: url('~/static/images/magio.svg') center no-repeat;
 					background-size: 100%;
 					cursor: pointer;
+					margin:  0.5em 0;
+					@include media-breakpoint-down($desktop-breakpoint) {
+						background-size: 75%;
+					}
+
+					@include media-breakpoint-down($small) {
+						background-size: 100%;
+					}
 				}
 				.linkConbrio {
 					width: 13em;
@@ -93,6 +154,14 @@
 					background: url('~/static/images/conbrio.svg') center no-repeat;
 					background-size: 100%;
 					cursor: pointer;
+					margin:  0.5em 1em;
+					@include media-breakpoint-down($desktop-breakpoint) {
+						background-size: 75%;
+						height: 4em;
+					}
+					@include media-breakpoint-down($small) {
+						background-size: 100%;
+					}
 				}
 				.linkVitek {
 					width: 13em;
@@ -100,6 +169,13 @@
 					background: url('~/static/images/vitek.svg') center no-repeat;
 					background-size: 100%;
 					cursor: pointer;
+					margin:  0.5em 0;
+					@include media-breakpoint-down($desktop-breakpoint) {
+						background-size: 75%;
+					}
+					@include media-breakpoint-down($small) {
+						background-size: 100%;
+					}
 				}
 			}
 		}

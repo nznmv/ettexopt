@@ -5,7 +5,7 @@
 			<a class="linkConbrio"></a>
 		</div>
 		<agile
-			:slidesToShow="3"
+			:slidesToShow="numberSlides"
 			:autoplay="true"
 			:autoplay-speed="7000"
 			:pause-on-hover="true"
@@ -62,15 +62,25 @@ export default {
 	computed: {
 		...mapGetters(['getBrandsText']),
 	},
+	props: {
+		numberSlides: Number,
+	}
 }
 </script>
 
 <style lang="scss">
 @import "styles/components/imports/variables";
+@import "styles/components/imports/breakpoints";
 
 .conbrio {
 	max-width: 68.75em;
 	margin: 0 auto 7em auto;
+	padding: 0 1em;
+
+
+	@include media-breakpoint-down($middle) {
+		margin: 0 auto 4em auto;
+	}
 
 	.conbrioTitle {
 		height: 18em;
@@ -79,10 +89,24 @@ export default {
 		justify-content: space-between;
 		align-items: center;
 
+		@include media-breakpoint-down($desktop-breakpoint) {
+			padding-bottom: 2em;
+		}
+
+		@include media-breakpoint-down($middle) {
+			height: 20em;
+			flex-direction: column-reverse;
+			justify-content: space-evenly;
+		}
+
 		.conbrioSubtitle {
 			font-size: 1.5em;
 			line-height: 1.4em;
 			max-width: 50%;
+
+			@include media-breakpoint-down($middle) {
+				max-width: 100%;
+			}
 		}
 
 		.linkConbrio {
@@ -96,6 +120,14 @@ export default {
 		width: 100%;
 		height: 16.8em;
 		position: relative;
+
+		@include media-breakpoint-down($middle) {
+			height: 20em;
+		}
+
+		@include media-breakpoint-down($small) {
+			height: 18.5em;
+		}
 
 		&__nav-button {
 			background: transparent;
@@ -175,6 +207,10 @@ export default {
 			max-height: 16.8em;
 			width: 33.3%;
 			object-fit: contain;
+
+			@include media-breakpoint-down($middle) {
+				max-height: 20em;
+			}
 
 			& > img {
 				object-fit: contain;

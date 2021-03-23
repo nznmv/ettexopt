@@ -113,10 +113,6 @@
 				line-height: 2.75em;
 				text-decoration: none;
 				text-transform: uppercase;
-
-				&:hover {
-					text-decoration: underline;
-				}
 			}
 			.bm-item-list > * {
 				display: flex;

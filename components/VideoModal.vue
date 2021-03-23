@@ -52,6 +52,7 @@ name: "VideoModal",
 
 <style lang="scss" scoped>
 	@import "styles/components/imports/variables";
+	@import "styles/components/imports/breakpoints";
 
 	.modal-wrapper {
 		width: 100%;
@@ -69,6 +70,11 @@ name: "VideoModal",
 		.playingVideo {
 			width: 70%;
 			height: 70%;
+
+			@include media-breakpoint-down($desktop-breakpoint) {
+				width: 100%;
+				height: 50%;
+			}
 		}
 		.closeButton {
 			width: 3em;
@@ -81,6 +87,12 @@ name: "VideoModal",
 			display: flex;
 			justify-content: center;
 			align-items: center;
+
+			@include media-breakpoint-down($middle) {
+				right: 50%;
+				top: 4em;
+				transform: translate(1.5em);
+			}
 
 			&:before {
 				content: '';

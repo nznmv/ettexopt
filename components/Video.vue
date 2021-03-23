@@ -305,6 +305,8 @@ export default {
 
 <style lang="scss">
 @import 'styles/components/imports/variables';
+@import "styles/components/imports/breakpoints";
+
 
 .videoReview-wrapper {
 	position: relative;
@@ -317,10 +319,33 @@ export default {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		padding: 0 1em;
+
+		@include media-breakpoint-down($desktop-breakpoint) {
+			max-width: none;
+			justify-content: space-evenly;
+			height: 65em;
+		}
+
+		@include media-breakpoint-down($middle) {
+			height: 50em;
+		}
+
+		@include media-breakpoint-down($small) {
+			height: 35em;
+		}
 
 		.blockTitle {
 			max-width: 10em;
 			margin-bottom: 2em;
+
+			@include media-breakpoint-down($desktop-breakpoint) {
+				margin-bottom: 0.2em;
+			}
+
+			@include media-breakpoint-down($small) {
+				font-size: 2.5em;
+			}
 		}
 
 		.videos-wrapper {
@@ -328,14 +353,42 @@ export default {
 			display: flex;
 			height: 25em;
 
+			@include media-breakpoint-down($desktop-breakpoint) {
+				flex-direction: column;
+				height: 40em;
+			}
+
+			@include media-breakpoint-down($middle) {
+				height: 34em;
+			}
+
+			@include media-breakpoint-down($small) {
+				height: 15em;
+			}
+
 			.bigVideos {
 				width: 70%;
+				@include media-breakpoint-down($desktop-breakpoint) {
+					width: 100%;
+				}
 
 				.agile{
 					width: 100%;
 					max-width: 45em;
 					height: 25em;
 					position: relative;
+
+					@include media-breakpoint-down($desktop-breakpoint) {
+						max-width: none;
+					}
+
+					@include media-breakpoint-down($middle) {
+						height: 18em;
+					}
+
+					@include media-breakpoint-down($small) {
+						height: 10em;
+					}
 
 					&__nav-button {
 						background: transparent;
@@ -351,15 +404,34 @@ export default {
 						z-index: 4;
 						@include icon-create (next, 4rem);
 
+						@include media-breakpoint-down($middle) {
+							color: $white;
+						}
+
+						&:before {
+							@include media-breakpoint-down($middle) {
+								display: none;
+							}
+						}
+
 						&:hover {
 							background-color: rgba(#000, .3);
 							opacity: 1;
+							@include media-breakpoint-down($middle) {
+								transform: none;
+							}
 						}
+
 						&--prev {
 							visibility: hidden;
 							left: -1.5em;
 							display: flex;
 							align-items: center;
+
+							@include media-breakpoint-down($middle) {
+								visibility: visible;
+								left: 0;
+							}
 
 							&:before {
 								visibility: visible;
@@ -372,6 +444,13 @@ export default {
 							visibility: hidden;
 							display: flex;
 							align-items: center;
+
+							@include media-breakpoint-down($middle) {
+								visibility: visible;
+								right: 0;
+								justify-content: flex-end;
+							}
+
 							&:before {
 								visibility: visible;
 							}
@@ -439,6 +518,18 @@ export default {
 							position: relative;
 							cursor: pointer;
 
+							@include media-breakpoint-down($desktop-breakpoint) {
+								height: 25em;
+							}
+
+							@include media-breakpoint-down($middle) {
+								height: 18em;
+							}
+
+							@include media-breakpoint-down($small) {
+								height: 10em;
+							}
+
 							img {
 								object-fit: cover;
 								width: 100%;
@@ -478,12 +569,41 @@ export default {
 				flex-direction: column;
 				justify-content: space-between;
 
+				@include media-breakpoint-down($desktop-breakpoint) {
+					flex-direction: row;
+					width: 100%;
+					margin-top: 1em;
+					height: 25em;
+				}
+
+				@include media-breakpoint-down($middle) {
+					height: 12em;
+				}
+
+				@include media-breakpoint-down($small) {
+					height: 5em;
+				}
+
 				.videoThumb {
 					width: 100%;
 					height: 12em;
 					overflow: hidden;
 					position: relative;
 					cursor: pointer;
+
+					@include media-breakpoint-down($middle) {
+						height: 12em;
+					}
+
+					@include media-breakpoint-down($small) {
+						height: 5em;
+					}
+
+					&:last-child {
+						@include media-breakpoint-down($desktop-breakpoint) {
+							border-left: 0.5em solid $white;
+						}
+					}
 
 					img {
 						object-fit: cover;

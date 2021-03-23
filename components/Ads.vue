@@ -78,6 +78,7 @@ export default {
 
 		@include media-breakpoint-down($middle) {
 			height: $adsHalfHeight;
+			justify-content: flex-start;
 		}
 
 		@include media-breakpoint-down($small) {

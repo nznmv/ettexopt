@@ -5,7 +5,7 @@
 			<a class="linkSatori"></a>
 		</div>
 		<agile
-			:slidesToShow="3"
+			:slidesToShow="numberSlides"
 			:autoplay="true"
 			:autoplay-speed="7000"
 			:pause-on-hover="true"
@@ -65,16 +65,20 @@ export default {
 	computed: {
 		...mapGetters(['getBrandsText']),
 	},
+	props: {
+		numberSlides: Number,
+	}
 }
 </script>
 
 <style lang="scss">
 @import "styles/components/imports/variables";
+@import "styles/components/imports/breakpoints";
 
 .satori {
 	max-width: 68.75em;
 	margin: 0 auto;
-	padding-bottom: 3em;
+	padding: 0 1em 3em;
 	border-bottom: 2px solid $purpleMedium;
 
 	.satoriTitle {
@@ -84,10 +88,24 @@ export default {
 		justify-content: space-between;
 		align-items: center;
 
+		@include media-breakpoint-down($desktop-breakpoint) {
+			padding-bottom: 2em;
+		}
+
+		@include media-breakpoint-down($middle) {
+			height: 20em;
+			flex-direction: column-reverse;
+			justify-content: space-evenly;
+		}
+
 		.satoriSubtitle {
 			font-size: 1.5em;
 			line-height: 1.4em;
 			max-width: 50%;
+
+			@include media-breakpoint-down($middle) {
+				max-width: 100%;
+			}
 		}
 
 		.linkSatori {
@@ -101,6 +119,14 @@ export default {
 		width: 100%;
 		height: 16.8em;
 		position: relative;
+
+		@include media-breakpoint-down($middle) {
+			height: 20em;
+		}
+
+		@include media-breakpoint-down($small) {
+			height: 18.5em;
+		}
 
 		&__nav-button {
 			background: transparent;
@@ -180,6 +206,10 @@ export default {
 			max-height: 16.8em;
 			width: 33.3%;
 			object-fit: contain;
+
+			@include media-breakpoint-down($middle) {
+				max-height: 20em;
+			}
 
 			& > img {
 				object-fit: contain;

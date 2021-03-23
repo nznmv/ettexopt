@@ -46,11 +46,16 @@ export default {
 
 <style lang="scss">
 @import 'styles/components/imports/variables';
+@import "styles/components/imports/breakpoints";
 
 .footer-wrapper {
 	width: 100vw;
 	height: 25.5em;
 	background: #000;
+
+	@include media-breakpoint-down($small) {
+		height: 33em;
+	}
 
 
 	.footer {
@@ -60,6 +65,13 @@ export default {
 		display: flex;
 		justify-content: space-between;
 		color: $white;
+		padding: 0 1em;
+
+		@include media-breakpoint-down($middle) {
+			flex-direction: column-reverse;
+			align-items: center;
+			justify-content: space-evenly;
+		}
 
 		.footerContacts-wrapper {
 			width: 50%;
@@ -67,9 +79,22 @@ export default {
 			justify-content: center;
 			align-items: center;
 
+			@include media-breakpoint-down($middle) {
+				width: 100%;
+			}
+
 			.footerContacts {
 				display: flex;
 				width: 100%;
+
+				@include media-breakpoint-down($middle) {
+					justify-content: space-evenly;
+					flex-wrap: wrap;
+				}
+
+				@include media-breakpoint-down($small) {
+					justify-content: flex-start;
+				}
 
 				.footerContactInfo {
 					display: flex;
@@ -85,6 +110,7 @@ export default {
 				color: $whiteOP28;
 				text-transform: uppercase;
 				letter-spacing: 0.1em;
+				margin-top: 0.75em;
 			}
 
 			.info {
@@ -92,7 +118,10 @@ export default {
 				font-size: 1.5em;
 				line-height: 1.45em;
 				text-decoration: none;
-				margin-top: 0.75em;
+
+				@include media-breakpoint-down($middle) {
+					margin-top: 0.75em;
+				}
 
 				&:link, &:visited{
 					color: white;
@@ -111,11 +140,26 @@ export default {
 		justify-content: flex-end;
 		align-items: center;
 
+		@include media-breakpoint-down($middle) {
+			width: 100%;
+			justify-content: center;
+		}
+
 	.links {
 		width: 14em;
 		height: 4em;
 		display: flex;
 		justify-content: space-between;
+
+		@include media-breakpoint-down($middle) {
+			width: 60%;
+		}
+
+		@include media-breakpoint-down($small) {
+			width: 100%;
+			justify-content: space-around;
+			margin-top: 5em;
+		}
 
 		& > a {
 			display: inline-block;

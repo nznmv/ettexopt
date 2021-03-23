@@ -311,6 +311,7 @@ export default {
 .videoReview-wrapper {
 	position: relative;
 	width: 100vw;
+	overflow: hidden;
 
 	.videoReview {
 		max-width: 68.75em;
@@ -332,7 +333,7 @@ export default {
 		}
 
 		@include media-breakpoint-down($small) {
-			height: 35em;
+			height: 30em;
 		}
 
 		.blockTitle {
@@ -344,7 +345,7 @@ export default {
 			}
 
 			@include media-breakpoint-down($small) {
-				font-size: 2.5em;
+				font-size: 2em;
 			}
 		}
 
@@ -404,12 +405,12 @@ export default {
 						z-index: 4;
 						@include icon-create (next, 4rem);
 
-						@include media-breakpoint-down($middle) {
+						@include media-breakpoint-down($desktop-breakpoint) {
 							color: $white;
 						}
 
 						&:before {
-							@include media-breakpoint-down($middle) {
+							@include media-breakpoint-down($desktop-breakpoint) {
 								display: none;
 							}
 						}
@@ -417,7 +418,7 @@ export default {
 						&:hover {
 							background-color: rgba(#000, .3);
 							opacity: 1;
-							@include media-breakpoint-down($middle) {
+							@include media-breakpoint-down($desktop-breakpoint) {
 								transform: none;
 							}
 						}
@@ -428,7 +429,7 @@ export default {
 							display: flex;
 							align-items: center;
 
-							@include media-breakpoint-down($middle) {
+							@include media-breakpoint-down($desktop-breakpoint) {
 								visibility: visible;
 								left: 0;
 							}
@@ -445,7 +446,7 @@ export default {
 							display: flex;
 							align-items: center;
 
-							@include media-breakpoint-down($middle) {
+							@include media-breakpoint-down($desktop-breakpoint) {
 								visibility: visible;
 								right: 0;
 								justify-content: flex-end;

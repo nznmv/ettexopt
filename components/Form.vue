@@ -98,6 +98,7 @@ export default {
 
 <style lang="scss">
 @import 'styles/components/imports/variables';
+@import "styles/components/imports/breakpoints";
 
 	.form {
 		display: flex;
@@ -110,6 +111,10 @@ export default {
 		background: $white;
 		position: relative;
 		bottom: -5em;
+
+		@include media-breakpoint-down($desktop-breakpoint) {
+			bottom: 0;
+		}
 
 		.formTitle {
 			font-family: $loadedFamilyRegular;
@@ -170,6 +175,17 @@ export default {
 			transform: translate(20%);
 			border: none;
 			outline: none;
+
+			@include media-breakpoint-down($middle) {
+				right: 4em;
+				bottom: 2em;
+			}
+
+			@include media-breakpoint-down($small) {
+				right: 50%;
+				bottom: 2em;
+				transform: translate(6.5em);
+			}
 		}
 
 		.textarea {

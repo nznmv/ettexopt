@@ -30,7 +30,6 @@
 		computed: {
 			...mapGetters(['getBrandsText']),
 			slideNumber() {
-				console.log(window.screen.width)
 				switch (true) {
 					case(window.screen.width >= 992): return 3;
 					case(window.screen.width >= 768): return 2;

@@ -3,7 +3,10 @@
 		<div class="brands">
 			<div class="brandsAbout">
 				<h2 class="title">{{getBrandsText.title}}</h2>
-				<p class="subtitle">{{getBrandsText.about}}</p>
+				<div>
+					<p class="subtitle">{{getBrandsText.firstAbout}}</p>
+					<p class="subtitle">{{getBrandsText.about}}</p>
+				</div>
 			</div>
 			<div class="brandsLinks">
 				<a href="#magio" class="linkMagio"></a>
@@ -13,8 +16,8 @@
 			</div>
 		</div>
 		<BrandsMagio/>
-		<BrandsSatori/>
-		<BrandsConbrio/>
+		<LazyBrandsSatori/>
+		<LazyBrandsConbrio/>
 	</div>
 
 </template>

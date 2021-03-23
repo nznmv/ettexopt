@@ -2,13 +2,13 @@
 	<div class="header">
 		<div class="logo"></div>
 		<div class="menu">
-			<ul class="navigation">
-				<li><a href="#aboutProducts">{{ getHeaderText.aboutProduct }}</a></li>
-				<li><a href="#advantages">{{ getHeaderText.advantages }}</a></li>
-				<li><a href="#review">{{ getHeaderText.review }}</a></li>
-				<li><a href="#cooperation">{{ getHeaderText.cooperation }}</a></li>
-				<li><a href="#contacts">{{ getHeaderText.contact }}</a></li>
-			</ul>
+				<ul class="navigation">
+					<li><a href="#aboutProducts">{{ getHeaderText.aboutProduct }}</a></li>
+					<li><a href="#advantages">{{ getHeaderText.advantages }}</a></li>
+					<li><a href="#review">{{ getHeaderText.review }}</a></li>
+					<li><a href="#cooperation">{{ getHeaderText.cooperation }}</a></li>
+					<li><a href="#contacts">{{ getHeaderText.contact }}</a></li>
+				</ul>
 			<div class="additional">
 				<LanguageChanger
 					:options="['ру', 'укр']"
@@ -24,6 +24,7 @@
 <script>
 	import LanguageChanger from '@/components/LanguageChanger';
 	import {mapActions, mapGetters, mapState} from 'vuex';
+
 	export default {
 		name: "Header",
 		components: {LanguageChanger},
@@ -86,8 +87,6 @@
 			.additional {
 				margin-left: 3em;
 			}
-
-
 		}
 	}
 </style>

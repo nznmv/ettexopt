@@ -28,6 +28,9 @@ export const getters = {
 	getFooterText(state) {
 		return state.selected_text_config.footer;
 	},
+	getVideoText(state) {
+		return state.selected_text_config.video;
+	},
 };
 export const mutations = {
 	SET_CONFIG(state, value) {

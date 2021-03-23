@@ -48,7 +48,7 @@
 				<img src="~/static/images/conbrio/13.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/14.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/9.JPG" alt="product photo" >
 			</div>
 		</agile>
 	</div>

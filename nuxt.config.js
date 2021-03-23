@@ -5,13 +5,18 @@ module.exports = {
 	mode: 'universal',
 	generate: {
 		dir : '.dist',
-		fallback: 'index.html'
+		fallback: 'index.html',
+	},
+	render: {
+		static: {
+			maxAge: 60 * 60 * 24 * 365 * 1000,
+		},
 	},
 	router: {
 		base: '/ettexopt/'
 	},
 	build: {
-		publicPath: '/ettexopt'
+		publicPath: '/ettexopt',
 	},
 	modules: [
 		'@nuxtjs/axios'
@@ -27,19 +32,21 @@ module.exports = {
 		'@/styles/main.scss'
 	],
 	head: {
-		title: 'ETTEXOPT - официальный дистрибьютор',
+		title: 'ETTEXOPT - офіційний дистриб\'ютор дрібної побутової техніки та посуду',
 		htmlAttrs: {
 			lang: 'ru'
 		},
 		meta: [
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-			{ name: "theme-color"}
+			{ name: 'Cache-Control', content: 'max-age=31536000' },
+			{ name:  'theme-color' },
+
 		],
 		link: [
-			{ rel: 'icon', type: 'image/png', href: '/icon/favicon.png' }
+			{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
 		],
 	},
 	plugins: [
-	]
+	],
 };

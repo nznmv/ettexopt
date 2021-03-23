@@ -1,15 +1,12 @@
 <template>
-	<div
-		class="main"
-
-	>
-		<Header/>
-		<Ads/>
-		<Brands/>
-		<Advantages/>
+	<div class="main">
+		<LazyHeader/>
+		<LazyAds/>
+		<LazyBrands/>
+		<LazyAdvantages/>
 		<Video/>
-		<Cooperation/>
-		<Footer/>
+		<LazyCooperation/>
+		<LazyFooter/>
 		<a href="tel:+380677286148" class="callback"></a>
 	</div>
 </template>
@@ -30,15 +27,6 @@ import {mapActions, mapState} from 'vuex';
 
 <style lang="scss" >
 	@import "styles/components/imports/variables";
-
-	.dot {
-		height: 300px;
-		background: antiquewhite;
-
-		&:first-child {
-			background: white;
-		}
-	}
 
 	.blockTitle {
 		color: $purple;

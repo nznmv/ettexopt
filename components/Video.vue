@@ -1,7 +1,7 @@
 <template>
 	<div class="videoReview-wrapper"  >
 		<div class="videoReview" >
-			<h2 class="blockTitle" id="review">Видеообзоры нашей продукции</h2>
+			<h2 class="blockTitle" id="review">{{ getVideoText.title }}</h2>
 			<div class="videos-wrapper">
 				<div class="bigVideos">
 					<agile
@@ -268,7 +268,7 @@
 </template>
 
 <script>
-import {mapState, mapActions} from 'vuex';
+import {mapState, mapActions, mapGetters} from 'vuex';
 import { youtube } from '@/config/video';
 
 export default {
@@ -298,6 +298,7 @@ export default {
 	},
 	computed: {
 		...mapState(['modal_show']),
+		...mapGetters(['getVideoText']),
 	}
 }
 </script>
@@ -518,7 +519,6 @@ export default {
 		}
 	}
 }
-
 
 .icon {
 	&-youtube{

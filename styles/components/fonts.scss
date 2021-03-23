@@ -27,16 +27,19 @@
   font-family: 'StratosLCWeb-Bold';
   src: local('StratosLCWeb-Bold'), local('StratosLCWeb-Bold'),
     url('~static/fonts/StratosLCWeb-Bold.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'StratosLCWeb-Medium';
     src: local('StratosLCWeb-Medium'), local('StratosLCWeb-Medium'),
     url('~static/fonts/StratosLCWeb-Medium.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'StratosLCWeb-Regular';
     src: local('StratosLCWeb-Regular'), local('StratosLCWeb-Regular'),
     url('~static/fonts/StratosLCWeb-Regular.ttf') format('truetype');
+    font-display: swap;
 }

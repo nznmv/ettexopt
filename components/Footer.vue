@@ -18,11 +18,14 @@
 			</div>
 			<div class="footerLinks">
 				<div class="links">
-					<a href="viber://chat?number=+380677286148">
+					<a href="viber://chat?number=+380677286148" target="_blank">
 						<i class="icon-viber"></i>
 					</a>
-					<a href="tg://resolve?domain=kbrnk">
+					<a href="tg://resolve?domain=kbrnk" target="_blank">
 						<i class="icon-telegram"></i>
+					</a>
+					<a href="https://wa.me/+380975335323" target="_blank">
+						<i class="icon-whatsapp"></i>
 					</a>
 				</div>
 			</div>
@@ -109,7 +112,7 @@ export default {
 		align-items: center;
 
 	.links {
-		width: 9em;
+		width: 14em;
 		height: 4em;
 		display: flex;
 		justify-content: space-between;
@@ -130,6 +133,11 @@ export default {
 	&-viber {
 		display: inline-block;
 		@include icon-create (Viber, 4em);
+	}
+
+	&-whatsapp {
+		display: inline-block;
+		@include icon-create (Whatsapp, 4em);
 	}
 }
 

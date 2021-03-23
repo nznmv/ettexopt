@@ -27,7 +27,9 @@
 					<p>{{getAdvantagesText.text5}}</p>
 				</div>
 			</div>
-			<a href="#cooperation" class="button">{{ getButtonText.contactUs }}</a>
+			<a href="#cooperation" class="button">
+				{{ getButtonText.contactUs }}
+			</a>
 		</div>
 	</div>
 </template>

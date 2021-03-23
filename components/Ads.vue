@@ -61,17 +61,28 @@ export default {
 
 <style lang="scss">
 @import "styles/components/imports/variables";
+@import "styles/components/imports/breakpoints";
+
 .ads {
 	.content-wrapper {
 		background: $purpleOP86;
 		width: 50vw;
-		height: 39.125em;
+		height: $adsHeightWeb;
 		position: absolute;
 		top: 8.125em;
 		z-index: 3;
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
+		padding-left: 1em;
+
+		@include media-breakpoint-down($middle) {
+			height: $adsHalfHeight;
+		}
+
+		@include media-breakpoint-down($small) {
+			width: 100%;
+		}
 
 		.content {
 			display: flex;
@@ -80,21 +91,42 @@ export default {
 			height: 22.375em;
 			margin-right: 3em;
 
+			@include media-breakpoint-down($middle) {
+				height: 100%;
+				margin-right: 1em;
+				justify-content: center;
+			}
+
+			.button {
+				@include media-breakpoint-down($middle) {
+					position: absolute;
+					bottom: -1em;
+				}
+			}
+
 			.title {
 				font-family: $loadedFamilyMedium;
 				font-size: 2.25em;
 				line-height: 1.35em;
 				color: $white;
 				max-width: 14em;
+
+				@include media-breakpoint-down($middle) {
+					font-size: 2em;
+				}
 			}
 		}
 	}
 
 	.agile{
 		width: 100%;
-		height: 39.125em;
+		height: $adsHeightWeb;
 		position: relative;
 		background: $purpleOP86;
+
+		@include media-breakpoint-down($middle) {
+			height: $adsHalfHeight;
+		}
 
 		&__nav-button {
 			background: transparent;
@@ -130,6 +162,10 @@ export default {
 			display: flex;
 			justify-content: space-between;
 			z-index: 4;
+
+			@include media-breakpoint-down($max-width) {
+				display: none;
+			}
 		}
 
 		&__dot {
@@ -184,8 +220,12 @@ export default {
 
 			.image {
 				object-fit: cover;
-				height: 39.125em;
+				height: $adsHeightWeb;
 				width: 100%;
+
+				@include media-breakpoint-down($middle) {
+					height: $adsHalfHeight;
+				}
 			}
 		}
 	}

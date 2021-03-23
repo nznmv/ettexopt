@@ -4,9 +4,15 @@ $loadedFamilyRegular: StratosLCWeb-Regular, Arial, sans-serif;
 $loadedFamilyMedium: StratosLCWeb-Medium, Arial, sans-serif;
 $loadedFamilyBold: StratosLCWeb-Bold, Arial, sans-serif;
 
+// =================== Sizes
+$adsHeightWeb: 39.125em;
+$adsHalfHeight: 19.5625em;
+
 // =================== BREAKPOINTS
 $min-width: xs;
 $max-width: xl;
+$middle: md;
+$small: sm;
 $desktop-breakpoint: lg;
 $large-desktop-breakpoint: xxl;
 $grid-breakpoints: (

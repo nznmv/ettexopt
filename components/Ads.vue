@@ -15,14 +15,14 @@
 			</div>
 			<div class="slide">
 				<img
-					src="../static/images/2.jpg"
+					src="~/static/images/2.JPG"
 					alt="kitchen"
 					class="image"
 				>
 			</div>
 			<div class="slide">
 				<img
-					src="@/static/images/3.jpg"
+					src="~/static/images/3.JPG"
 					alt="kitchen"
 					class="image"
 				>

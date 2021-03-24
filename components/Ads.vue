@@ -76,6 +76,10 @@ export default {
 		justify-content: flex-end;
 		padding-left: 1em;
 
+		@include media-breakpoint-down($desktop-breakpoint) {
+			top: 6em;
+		}
+
 		@include media-breakpoint-down($middle) {
 			height: $adsHalfHeight;
 			justify-content: flex-start;

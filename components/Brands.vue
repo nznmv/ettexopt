@@ -64,7 +64,7 @@
 			}
 
 			@include media-breakpoint-down($small) {
-				height: 30em;
+				height: 25em;
 			}
 
 			.brandsAbout {
@@ -82,7 +82,7 @@
 					font-size: 2em;
 
 					@include media-breakpoint-down($small) {
-						font-size: 1.7em;
+						font-size: 1.35em;
 					}
 
 					@include media-breakpoint-down($desktop-breakpoint) {
@@ -95,6 +95,11 @@
 
 					@include media-breakpoint-down($desktop-breakpoint) {
 						max-width: 100%;
+					}
+
+					@include media-breakpoint-down($small) {
+						font-size: 0.85em;
+						text-align: center;
 					}
 				}
 			}

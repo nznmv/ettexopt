@@ -110,7 +110,7 @@ name: "Cooperation",
 			}
 
 			.coopForm {
-				width: 50%;
+				width: 55%;
 
 				@include media-breakpoint-down($max-width) {
 					width: 100%;

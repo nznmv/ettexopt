@@ -311,7 +311,6 @@ export default {
 .videoReview-wrapper {
 	position: relative;
 	width: 100vw;
-	overflow: hidden;
 
 	.videoReview {
 		max-width: 68.75em;
@@ -325,6 +324,10 @@ export default {
 		@include media-breakpoint-down($desktop-breakpoint) {
 			max-width: none;
 			justify-content: space-evenly;
+			height: 65em;
+		}
+
+		@include media-breakpoint-down($desktop-breakpoint) {
 			height: 65em;
 		}
 
@@ -353,6 +356,7 @@ export default {
 			width: 100%;
 			display: flex;
 			height: 25em;
+			overflow: hidden;
 
 			@include media-breakpoint-down($desktop-breakpoint) {
 				flex-direction: column;
@@ -425,7 +429,7 @@ export default {
 
 						&--prev {
 							visibility: hidden;
-							left: -1.5em;
+							left: 0;
 							display: flex;
 							align-items: center;
 
@@ -441,7 +445,7 @@ export default {
 						}
 
 						&--next {
-							right: -2em;
+							right: -0.5em;
 							visibility: hidden;
 							display: flex;
 							align-items: center;

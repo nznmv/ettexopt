@@ -98,6 +98,11 @@ export default {
 			justify-content: space-evenly;
 		}
 
+		@include media-breakpoint-down($middle) {
+			height: 18em;
+		}
+
+
 		.satoriSubtitle {
 			font-size: 1.5em;
 			line-height: 1.4em;
@@ -105,6 +110,11 @@ export default {
 
 			@include media-breakpoint-down($middle) {
 				max-width: 100%;
+			}
+
+			@include media-breakpoint-down($middle) {
+				font-size: 1.25em;
+				text-align: center;
 			}
 		}
 
@@ -209,6 +219,10 @@ export default {
 
 			@include media-breakpoint-down($middle) {
 				max-height: 20em;
+			}
+
+			@include media-breakpoint-down($small) {
+				height: 18.5em;
 			}
 
 			& > img {

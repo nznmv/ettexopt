@@ -6,9 +6,9 @@
 					<div class="footerContactInfo">
 						<p class="infoHeader">{{getFooterText.contacts}}</p>
 						<a  href="mailto:ettex.kyiv@gmail.com" class="info">ettex.kyiv@gmail.com</a>
-						<a href="+380677286148" class="info">+38 067 728 61 48</a>
-						<a href="+380935371087" class="info">+38 093 537 10 87</a>
-						<a href="+380975335323" class="info">+38 097 533 53 23</a>
+						<a href="tel:+380677286148" class="info">+38 067 728 61 48</a>
+						<a href="tel:+380935371087" class="info">+38 093 537 10 87</a>
+						<a href="tel:+380975335323" class="info">+38 097 533 53 23</a>
 					</div>
 					<div class="footerMailInfo">
 						<p class="infoHeader">{{getFooterText.mail}}</p>
@@ -29,6 +29,9 @@
 					</a>
 				</div>
 			</div>
+			<a href="mailto:nznmv@gmail.com" target="_blank">
+				<i class="icon-nznmv"></i>
+			</a>
 		</div>
 	</div>
 </template>
@@ -66,6 +69,7 @@ export default {
 		justify-content: space-between;
 		color: $white;
 		padding: 0 1em;
+		position: relative;
 
 		@include media-breakpoint-down($middle) {
 			flex-direction: column-reverse;
@@ -182,6 +186,21 @@ export default {
 	&-whatsapp {
 		display: inline-block;
 		@include icon-create (Whatsapp, 4em);
+	}
+
+	&-nznmv {
+		display: inline-block;
+		position: absolute;
+		right: 1em;
+		bottom: 1em;
+		@include icon-create (logo_nznmv_white, 6em);
+
+		&:before {
+			height: 3.5em;
+		}
+		@include media-breakpoint-down($small) {
+			bottom: 0em;
+		}
 	}
 }
 

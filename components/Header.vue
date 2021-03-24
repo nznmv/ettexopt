@@ -66,6 +66,7 @@
 
 		@include media-breakpoint-down($desktop-breakpoint) {
 			justify-content: center;
+			height: 6em;
 		}
 
 		.logo {
@@ -79,7 +80,7 @@
 			display: none;
 
 			.bm-burger-button {
-				top: 3.2em;
+				top: 2.2em;
 				left: 1em;
 			}
 			.bm-burger-bars {
@@ -103,6 +104,7 @@
 			}
 			.bm-menu {
 				background-color: $purple; /* Black*/
+				transition: 0.3s
 			}
 
 			.bm-item-list {
@@ -123,6 +125,8 @@
 				margin-left: 10px;
 				font-weight: 700;
 				color: white;
+				overflow: hidden;
+				white-space: nowrap;
 			}
 
 			@include media-breakpoint-down($desktop-breakpoint) {

@@ -59,7 +59,7 @@ name: "Advantages",
 		}
 
 		@include media-breakpoint-down($small) {
-			height: 64em;
+			height: 57em;
 		}
 
 
@@ -93,7 +93,7 @@ name: "Advantages",
 					line-height: 1em;
 
 					@include media-breakpoint-down($small) {
-						font-size: 2.5em;
+						font-size: 2em;
 					}
 				}
 

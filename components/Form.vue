@@ -78,7 +78,7 @@ export default {
 
 			axios
 				.post(
-					"https://formsubmit.co/ettex.kyiv@gmail.com",
+					"https://formsubmit.co/23bdb8a4b31fe6699baea5fb7753766c",
 					data
 				)
 				.then(

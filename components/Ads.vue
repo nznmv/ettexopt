@@ -8,21 +8,21 @@
 		>
 			<div class="slide" >
 				<img
-					src="~/static/images/1.jpg"
+					src="../static/images/1.jpg"
 					alt="kitchen"
 					class="image"
 				>
 			</div>
 			<div class="slide">
 				<img
-					src="~/static/images/2.jpg"
+					src="../static/images/2.jpg"
 					alt="kitchen"
 					class="image"
 				>
 			</div>
 			<div class="slide">
 				<img
-					src="~/static/images/3.jpg"
+					src="../static/images/3.jpg"
 					alt="kitchen"
 					class="image"
 				>

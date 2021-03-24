@@ -6,6 +6,7 @@ module.exports = {
 	mode: 'universal',
 	generate: {
 		dir : 'dist',
+		fallback: 'index.html'
 	},
 	render: {
 		static: {
@@ -15,10 +16,6 @@ module.exports = {
 	modules: [
 		'@nuxtjs/axios'
 	],
-	server: {
-		port: 8000,
-		host: '0.0.0.0'
-	},
 	axios: {
 		https: true
 	},

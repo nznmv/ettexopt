@@ -1,11 +1,12 @@
 module.exports = {
 	target: 'static',
+	ssr: false,
 	runtimeCompiler: true,
 	components: true,
 	mode: 'universal',
 	generate: {
-		dir : '.dist',
-		fallback: 'index.html',
+		dir : 'dist',
+		fallback: true
 	},
 	render: {
 		static: {

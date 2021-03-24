@@ -548,7 +548,7 @@ export default {
 								display: inline-block;
 								width: 3em;
 								height: 3em;
-								background: url('~@/static/icon/youtube.svg') no-repeat center;
+								background: url('./static/icon/youtube.svg') no-repeat center;
 								background-size: 100%;
 								position: absolute;
 								left: 50%;

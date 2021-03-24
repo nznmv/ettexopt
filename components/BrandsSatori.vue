@@ -12,46 +12,46 @@
 			:speed="700"
 		>
 			<div class="slide">
-				<img src="~/static/images/satori/1.JPG" alt="product photo" >
+				<img src="~/static/images/satori/1.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/2.JPG" alt="product photo">
+				<img src="~/static/images/satori/2.jpg" alt="product photo">
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/3.JPG" alt="product photo" >
+				<img src="~/static/images/satori/3.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/4.JPG" alt="product photo" >
+				<img src="~/static/images/satori/4.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/5.JPG" alt="product photo" >
+				<img src="~/static/images/satori/5.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/6.JPG" alt="product photo" >
+				<img src="~/static/images/satori/6.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/7.JPG" alt="product photo" >
+				<img src="~/static/images/satori/7.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/8.JPG" alt="product photo" >
+				<img src="~/static/images/satori/8.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/9.JPG" alt="product photo" >
+				<img src="~/static/images/satori/9.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/10.JPG" alt="product photo" >
+				<img src="~/static/images/satori/10.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/11.JPG" alt="product photo" >
+				<img src="~/static/images/satori/11.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/12.JPG" alt="product photo" >
+				<img src="~/static/images/satori/12.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/13.JPG" alt="product photo" >
+				<img src="~/static/images/satori/13.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/satori/14.JPG" alt="product photo" >
+				<img src="~/static/images/satori/14.jpg" alt="product photo" >
 			</div>
 		</agile>
 	</div>

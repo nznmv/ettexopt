@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nuxt --spa",
-    "deploy": "gh-pages -d .dist",
+    "deploy": "gh-pages -d dist",
     "generate": "nuxt generate",
-    "build": "CI= npm run generate"
+    "build": "nuxt build --spa && nuxt export --spa && gulp release"
   },
   "author": "Sasha Neznamov",
   "license": "ISC",

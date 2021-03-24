@@ -1,31 +1,21 @@
 module.exports = {
 	target: 'static',
-	ssr: false,
 	runtimeCompiler: true,
 	components: true,
 	mode: 'universal',
+	ssr: false,
 	generate: {
 		dir : 'dist',
-		fallback: true
+		fallback: true,
 	},
 	render: {
 		static: {
 			maxAge: 60 * 60 * 24 * 365 * 1000,
 		},
 	},
-	router: {
-		base: '/ettexopt/'
-	},
-	build: {
-		publicPath: '/ettexopt',
-	},
 	modules: [
 		'@nuxtjs/axios'
 	],
-	server: {
-		port: 8000,
-		host: '0.0.0.0'
-	},
 	axios: {
 		https: true
 	},
@@ -42,12 +32,9 @@ module.exports = {
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 			{ name: 'Cache-Control', content: 'max-age=31536000' },
 			{ name:  'theme-color' },
-
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
 		],
 	},
-	plugins: [
-	],
 };

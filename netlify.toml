@@ -1,13 +1,13 @@
 [[headers]]
-  for = "/img/*"
+  for = "/*.jpg"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "/svg/*"
+  for = "/*.svg"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "/ttf/*"
+  for = "/*.ttf"
   [headers.values]
     Cache-Control = "public, s-max-age=31536000"
 [[headers]]

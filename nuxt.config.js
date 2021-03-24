@@ -18,7 +18,7 @@ module.exports = {
 		'@/styles/main.scss'
 	],
 	head: {
-		title: 'ETTEXOPT - офіційний дистриб\'ютор дрібної побутової техніки та посуду',
+		title: 'ETTEX - офіційний дистриб\'ютор дрібної побутової техніки та посуду',
 		htmlAttrs: {
 			lang: 'ru'
 		},

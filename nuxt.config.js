@@ -6,7 +6,6 @@ module.exports = {
 	mode: 'universal',
 	generate: {
 		dir : 'dist',
-		fallback: true
 	},
 	render: {
 		static: {

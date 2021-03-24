@@ -15,7 +15,7 @@
 				<img src="~/static/images/magio/1.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/magio/2.jpg" alt="product photo">
+				<img src="~/static/images/magio/2.JPG" alt="product photo">
 			</div>
 			<div class="slide">
 				<img src="~/static/images/magio/3.jpg" alt="product photo" >
@@ -24,16 +24,16 @@
 				<img src="~/static/images/magio/4.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/magio/5.jpg" alt="product photo" >
+				<img src="~/static/images/magio/5.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
 				<img src="~/static/images/magio/6.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/magio/7.jpg" alt="product photo" >
+				<img src="~/static/images/magio/7.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/magio/8.jpg" alt="product photo" >
+				<img src="~/static/images/magio/8.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
 				<img src="~/static/images/magio/9.jpg" alt="product photo" >
@@ -48,22 +48,22 @@
 				<img src="~/static/images/magio/12.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/magio/13.jpg" alt="product photo" >
+				<img src="~/static/images/magio/13.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
 				<img src="~/static/images/magio/14.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/magio/15.jpg" alt="product photo" >
+				<img src="~/static/images/magio/15.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/magio/16.jpg" alt="product photo" >
+				<img src="~/static/images/magio/16.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
 				<img src="~/static/images/magio/17.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/magio/18.jpg" alt="product photo" >
+				<img src="~/static/images/magio/18.JPG" alt="product photo" >
 			</div>
 		</agile>
 	</div>

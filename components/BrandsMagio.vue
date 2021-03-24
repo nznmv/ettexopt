@@ -12,7 +12,7 @@
 			:speed="700"
 		>
 			<div class="slide">
-				<img src="~/static/images/magio/1.jpg" alt="product photo" >
+				<img src="~/static/images/magio/1.JPG" alt="product photo" >
 			</div>
 			<div class="slide">
 				<img src="~/static/images/magio/2.jpg" alt="product photo">

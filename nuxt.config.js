@@ -41,7 +41,6 @@ module.exports = {
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 			{ name: 'Cache-Control', content: 'max-age=31536000' },
 			{ name:  'theme-color' },
-
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }

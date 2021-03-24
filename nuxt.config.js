@@ -12,12 +12,6 @@ module.exports = {
 			maxAge: 60 * 60 * 24 * 365 * 1000,
 		},
 	},
-	router: {
-		base: '/ettexopt/'
-	},
-	build: {
-		publicPath: '/ettexopt',
-	},
 	modules: [
 		'@nuxtjs/axios'
 	],

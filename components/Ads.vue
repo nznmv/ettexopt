@@ -8,7 +8,7 @@
 		>
 			<div class="slide" >
 				<img
-					src="../static/images/1.jpg"
+					src="~/static/images/1.JPG"
 					alt="kitchen"
 					class="image"
 				>
@@ -22,7 +22,7 @@
 			</div>
 			<div class="slide">
 				<img
-					src="../static/images/3.jpg"
+					src="@/static/images/3.jpg"
 					alt="kitchen"
 					class="image"
 				>

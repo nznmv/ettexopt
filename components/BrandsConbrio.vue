@@ -12,43 +12,43 @@
 			:speed="700"
 		>
 			<div class="slide">
-				<img src="~/static/images/conbrio/1.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/1.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/2.JPG" alt="product photo">
+				<img src="~/static/images/conbrio/2.jpg" alt="product photo">
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/3.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/3.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/4.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/4.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/5.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/5.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/6.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/6.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/7.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/7.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/8.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/8.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/9.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/9.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/10.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/10.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/11.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/11.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/12.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/12.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/13.JPG" alt="product photo" >
+				<img src="~/static/images/conbrio/13.jpg" alt="product photo" >
 			</div>
 		</agile>
 	</div>

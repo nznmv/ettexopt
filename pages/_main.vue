@@ -4,7 +4,6 @@
 		<LazyAds/>
 		<LazyBrands/>
 		<LazyAdvantages/>
-		<Video/>
 		<LazyCooperation/>
 		<LazyFooter/>
 		<a href="tel:+380677286148" class="callback"></a>

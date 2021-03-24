@@ -3,7 +3,6 @@ module.exports = {
 	ssr: false,
 	runtimeCompiler: true,
 	components: true,
-	mode: 'universal',
 	generate: {
 		dir : 'dist',
 		fallback: true

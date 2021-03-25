@@ -27,6 +27,26 @@ module.exports = {
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 			{ name: 'Cache-Control', content: 'max-age=31536000' },
 			{ name:  'theme-color' },
+			{
+				hid: 'description',
+				name: 'description',
+				content: 'magio ' +
+					'satori ' +
+					'conbrio ' +
+					'Поставщик посуды ' +
+					'Посуда от производителя ' +
+					'Мажио ' +
+					'Маджио ' +
+					'Сатори ' +
+					'Конбрио ' +
+					'Бытовая техника оптом ' +
+					'Мелкая бытовая техника оптом ' +
+					'Посуда оптом ' +
+					'Поставщик бытовой техники ' +
+					'Бытовая техника от производителя ' +
+					'Купить бытовую технику оптом ' +
+					'Купить посуду оптом '
+			}
 
 		],
 		link: [

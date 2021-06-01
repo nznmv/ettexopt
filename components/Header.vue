@@ -1,5 +1,14 @@
 <template>
 	<div class="header">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTWQ9N4X1R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TTWQ9N4X1R');
+</script>
 		<div class="logo"></div>
 		<div class="menu">
 				<ul class="navigation">

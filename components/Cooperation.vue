@@ -38,23 +38,6 @@ name: "Cooperation",
 		height: 22em;
 		background: $purpleBackground;
 
-		@include media-breakpoint-down($max-width) {
-			height: 50em;
-		}
-
-		@include media-breakpoint-down($desktop-breakpoint) {
-			height: 60em;
-		}
-
-		@include media-breakpoint-down($middle) {
-			height: 60em;
-		}
-
-		@include media-breakpoint-down($small) {
-			height: 60em;
-		}
-
-
 		.coop {
 			max-width: 68.75em;
 			height: 100%;

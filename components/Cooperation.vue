@@ -6,7 +6,7 @@
 				<p class="coopTextParagraph">{{getCoopText.text}}</p>
 				<i class="icon-logoWhite"></i>
 			</div>
-			<div v-if="showForm" class="coopForm">
+			<div class="coopForm">
 				<Form/>
 			</div>
 		</div>
@@ -18,11 +18,6 @@ import {mapGetters} from 'vuex';
 
 export default {
 name: "Cooperation",
-	data() {
-		return {
-			showForm: false,
-		}
-	},
 	computed: {
 		...mapGetters(['getCoopText']),
 	}
@@ -35,8 +30,25 @@ name: "Cooperation",
 
 	.coop-wrapper {
 		width: 100vw;
-		height: 22em;
+		height: 39em;
 		background: $purpleBackground;
+
+		@include media-breakpoint-down($max-width) {
+			height: 50em;
+		}
+
+		@include media-breakpoint-down($desktop-breakpoint) {
+			height: 60em;
+		}
+
+		@include media-breakpoint-down($middle) {
+			height: 60em;
+		}
+
+		@include media-breakpoint-down($small) {
+			height: 60em;
+		}
+
 
 		.coop {
 			max-width: 68.75em;
@@ -61,8 +73,7 @@ name: "Cooperation",
 			}
 
 			.coopText {
-				width: 80%;
-				margin-bottom: 4em;
+				width: 50%;
 
 				@include media-breakpoint-down($max-width) {
 					width: 100%;
@@ -75,8 +86,8 @@ name: "Cooperation",
 					font-size: 1.5em;
 					line-height: 1.5em;
 					text-align: left;
-					width: 100%;
-					margin-top: 1.25em;
+					max-width: 19em;
+					margin-top: 2em;
 
 					@include media-breakpoint-down($max-width) {
 						max-width: none;

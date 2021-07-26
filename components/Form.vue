@@ -78,7 +78,7 @@ export default {
 
 			axios
 				.post(
-					"https://formsubmit.co/23bdb8a4b31fe6699baea5fb7753766c",
+					"https://submit-form.com/qkGShqnZ",
 					data
 				)
 				.then(
@@ -98,7 +98,7 @@ export default {
 
 <style lang="scss">
 @import 'styles/components/imports/variables';
-@import "styles/components/imports/breakpoints";
+@import 'styles/components/imports/breakpoints';
 
 	.form {
 		display: flex;

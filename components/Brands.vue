@@ -19,7 +19,9 @@
 		</div>
 		<BrandsMagio :numberSlides="slideNumber"/>
 		<LazyBrandsSatori :numberSlides="slideNumber"/>
+		<LazyBrandsSeaBreeze :numberSlides="slideNumber"/>
 		<LazyBrandsConbrio :numberSlides="slideNumber"/>
+		<LazyBrandsWellDone :numberSlides="slideNumber"/>
 	</div>
 
 </template>

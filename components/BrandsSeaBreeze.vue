@@ -1,8 +1,8 @@
 <template>
-	<div class="conbrio" id="conbrio">
-		<div class="conbrioTitle">
-			<p class="conbrioSubtitle">{{getBrandsText.conbrio}}</p>
-			<a class="linkConbrio"></a>
+	<div class="seaBreeze" id="seaBreeze">
+		<div class="seaBreezeTitle">
+			<p class="seaBreezeSubtitle">{{getBrandsText.seaBreeze}}</p>
+			<a class="linkSeaBreeze"></a>
 		</div>
 		<agile
 			:slidesToShow="numberSlides"
@@ -12,43 +12,37 @@
 			:speed="700"
 		>
 			<div class="slide">
-				<img src="~/static/images/conbrio/1.jpg" alt="product photo" >
+				<img src="~/static/images/seaBreeze/1.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/2.jpg" alt="product photo">
+				<img src="~/static/images/seaBreeze/2.png" alt="product photo">
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/3.jpg" alt="product photo" >
+				<img src="~/static/images/seaBreeze/3.jpeg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/4.jpg" alt="product photo" >
+				<img src="~/static/images/seaBreeze/4.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/5.jpg" alt="product photo" >
+				<img src="~/static/images/seaBreeze/5.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/6.jpg" alt="product photo" >
+				<img src="~/static/images/seaBreeze/6.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/7.jpg" alt="product photo" >
+				<img src="~/static/images/seaBreeze/7.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/8.jpg" alt="product photo" >
+				<img src="~/static/images/seaBreeze/8.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/9.jpg" alt="product photo" >
+				<img src="~/static/images/seaBreeze/9.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/10.jpg" alt="product photo" >
+				<img src="~/static/images/seaBreeze/10.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/11.jpg" alt="product photo" >
-			</div>
-			<div class="slide">
-				<img src="~/static/images/conbrio/12.jpg" alt="product photo" >
-			</div>
-			<div class="slide">
-				<img src="~/static/images/conbrio/13.jpg" alt="product photo" >
+				<img src="~/static/images/seaBreeze/11.jpg" alt="product photo" >
 			</div>
 		</agile>
 	</div>
@@ -58,7 +52,7 @@
 	import {mapGetters} from 'vuex';
 
 export default {
-	name: "BrandsConbrio",
+	name: "BrandsseaBreeze",
 	computed: {
 		...mapGetters(['getBrandsText']),
 	},
@@ -72,15 +66,15 @@ export default {
 @import "styles/components/imports/variables";
 @import "styles/components/imports/breakpoints";
 
-.conbrio {
+.seaBreeze {
 	max-width: 68.75em;
 	margin: 0 auto;
 	padding: 0 1em 3em;
 	border-bottom: 2px solid $purpleMedium ;
 
-	.conbrioTitle {
+	.seaBreezeTitle {
 		height: 18em;
-		padding-bottom: 5em;
+		padding-bottom: 3em;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -90,16 +84,16 @@ export default {
 		}
 
 		@include media-breakpoint-down($middle) {
-			height: 20em;
+			height: 25em;
 			flex-direction: column-reverse;
 			justify-content: space-evenly;
 		}
 
 		@include media-breakpoint-down($middle) {
-			height: 18em;
+			height: 22em;
 		}
 
-		.conbrioSubtitle {
+		.seaBreezeSubtitle {
 			font-size: 1.5em;
 			line-height: 1.4em;
 			max-width: 50%;
@@ -114,10 +108,10 @@ export default {
 			}
 		}
 
-		.linkConbrio {
+		.linkSeaBreeze {
 			width: 13em;
 			height: 5em;
-			background: url('~/static/images/conbrio.svg') center no-repeat;
+			background: url('~/static/images/seaBreeze.svg') center no-repeat;
 			background-size: 100%;
 		}
 	}
@@ -207,7 +201,9 @@ export default {
 		}
 
 		.slide {
-			display: block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			height: 100%;
 			max-height: 16.8em;
 			width: 33.3%;
@@ -222,9 +218,9 @@ export default {
 			}
 
 			& > img {
-				object-fit: contain;
+				object-fit: cover;
 				height: 100%;
-				width: 100%;
+				width: auto;
 				border-right: 2px solid $white;
 				border-left: 2px solid $white;
 			}

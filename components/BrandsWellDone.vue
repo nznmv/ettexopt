@@ -1,8 +1,8 @@
 <template>
-	<div class="conbrio" id="conbrio">
-		<div class="conbrioTitle">
-			<p class="conbrioSubtitle">{{getBrandsText.conbrio}}</p>
-			<a class="linkConbrio"></a>
+	<div class="wellDone" id="wellDone">
+		<div class="wellDoneTitle">
+			<p class="wellDoneSubtitle">{{getBrandsText.wellDone}}</p>
+			<a class="linkWellDone"></a>
 		</div>
 		<agile
 			:slidesToShow="numberSlides"
@@ -12,43 +12,43 @@
 			:speed="700"
 		>
 			<div class="slide">
-				<img src="~/static/images/conbrio/1.jpg" alt="product photo" >
+				<img src="~/static/images/wellDone/3.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/2.jpg" alt="product photo">
+				<img src="~/static/images/wellDone/4.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/3.jpg" alt="product photo" >
+				<img src="~/static/images/wellDone/5.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/4.jpg" alt="product photo" >
+				<img src="~/static/images/wellDone/6.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/5.jpg" alt="product photo" >
+				<img src="~/static/images/wellDone/7.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/6.jpg" alt="product photo" >
+				<img src="~/static/images/wellDone/8.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/7.jpg" alt="product photo" >
+				<img src="~/static/images/wellDone/9.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/8.jpg" alt="product photo" >
+				<img src="~/static/images/wellDone/10.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/9.jpg" alt="product photo" >
+				<img src="~/static/images/wellDone/11.png" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/10.jpg" alt="product photo" >
+				<img src="~/static/images/wellDone/12.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/11.jpg" alt="product photo" >
+				<img src="~/static/images/wellDone/13.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/12.jpg" alt="product photo" >
+				<img src="~/static/images/wellDone/14.jpg" alt="product photo" >
 			</div>
 			<div class="slide">
-				<img src="~/static/images/conbrio/13.jpg" alt="product photo" >
+				<img src="~/static/images/wellDone/15.jpg" alt="product photo" >
 			</div>
 		</agile>
 	</div>
@@ -58,7 +58,7 @@
 	import {mapGetters} from 'vuex';
 
 export default {
-	name: "BrandsConbrio",
+	name: "BrandsWellDone",
 	computed: {
 		...mapGetters(['getBrandsText']),
 	},
@@ -72,15 +72,18 @@ export default {
 @import "styles/components/imports/variables";
 @import "styles/components/imports/breakpoints";
 
-.conbrio {
+.wellDone {
 	max-width: 68.75em;
-	margin: 0 auto;
-	padding: 0 1em 3em;
-	border-bottom: 2px solid $purpleMedium ;
+	margin: 0 auto 7em auto;
+	padding: 0 1em;
 
-	.conbrioTitle {
+	@include media-breakpoint-down($middle) {
+		margin: 0 auto 4em auto;
+	}
+
+	.wellDoneTitle {
 		height: 18em;
-		padding-bottom: 5em;
+		padding-bottom: 3em;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -90,16 +93,16 @@ export default {
 		}
 
 		@include media-breakpoint-down($middle) {
-			height: 20em;
+			height: 25em;
 			flex-direction: column-reverse;
 			justify-content: space-evenly;
 		}
 
 		@include media-breakpoint-down($middle) {
-			height: 18em;
+			height: 22em;
 		}
 
-		.conbrioSubtitle {
+		.wellDoneSubtitle {
 			font-size: 1.5em;
 			line-height: 1.4em;
 			max-width: 50%;
@@ -114,16 +117,15 @@ export default {
 			}
 		}
 
-		.linkConbrio {
+		.linkWellDone {
 			width: 13em;
 			height: 5em;
-			background: url('~/static/images/conbrio.svg') center no-repeat;
+			background: url('~/static/images/wellDone.png') center no-repeat;
 			background-size: 100%;
 		}
 	}
 	.agile{
 		width: 100%;
-		height: 16.8em;
 		position: relative;
 
 		@include media-breakpoint-down($middle) {
@@ -222,7 +224,7 @@ export default {
 			}
 
 			& > img {
-				object-fit: contain;
+				object-fit: cover;
 				height: 100%;
 				width: 100%;
 				border-right: 2px solid $white;

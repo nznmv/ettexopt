@@ -3,10 +3,20 @@ module.exports = {
 	ssr: false,
 	runtimeCompiler: true,
 	components: true,
-	mode: 'universal',
 	generate: {
 		dir : 'dist',
 		fallback: 'index.html'
+	},
+	build: {
+		transpile: [],
+		loaders: {
+			scss: {
+				implementation: require('sass'),
+			},
+		},
+		babel: {
+			compact: true,
+		}
 	},
 	modules: [
 		'@nuxtjs/axios'
@@ -30,22 +40,9 @@ module.exports = {
 			{
 				hid: 'description',
 				name: 'description',
-				content: 'magio ' +
-					'satori ' +
-					'conbrio ' +
-					'Поставщик посуды ' +
-					'Посуда от производителя ' +
-					'Мажио ' +
-					'Маджио ' +
-					'Сатори ' +
-					'Конбрио ' +
-					'Бытовая техника оптом ' +
-					'Мелкая бытовая техника оптом ' +
-					'Посуда оптом ' +
-					'Поставщик бытовой техники ' +
-					'Бытовая техника от производителя ' +
-					'Купить бытовую технику оптом ' +
-					'Купить посуду оптом '
+				content: 'Мелкая бытовая техника и посуда оптом. Magio, Satori, Vitek, Well Done, Con Brio.' +
+					'Более 20-ти лет на рынке. Лучшие условия для Вас.'
+
 			}
 
 		],

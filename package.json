@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nuxt --spa",
     "deploy": "gh-pages -d dist",
+    "start": "nuxt start",
     "generate": "nuxt generate",
     "build": "nuxt build --spa && nuxt export --spa && gulp release"
   },

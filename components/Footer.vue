@@ -5,7 +5,7 @@
 				<div class="footerContacts">
 					<div class="footerContactInfo">
 						<p class="infoHeader">{{getFooterText.contacts}}</p>
-						<a  href="mailto:ettex.kyiv@gmail.com" class="info">ettex.kyiv@gmail.com</a>
+						<a  href="mailto:sales@ettex.kyiv.ua" class="info">sales@ettex.kyiv.ua</a>
 						<a href="tel:+380677286148" class="info">+38 067 728 61 48</a>
 						<a href="tel:+380935371087" class="info">+38 093 537 10 87</a>
 						<a href="tel:+380975335323" class="info">+38 097 533 53 23</a>

@@ -26,18 +26,6 @@
 								@click="showThisVideo"
 							>
 								<img
-									:src="selectVideo(2)"
-									alt="you tube videos screen"
-									:id="setVideoId(2)"
-								>
-							</div>
-						</div>
-						<div class="slide">
-							<div
-								class="videoThumb"
-								@click="showThisVideo"
-							>
-								<img
 									:src="selectVideo(3)"
 									alt="you tube videos screen"
 									:id="setVideoId(3)"

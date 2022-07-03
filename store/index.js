@@ -1,4 +1,4 @@
-import { main } from '@/config/ruText';
+import { main } from '@/config/uaText';
 
 export const state = () => ({
 	selected_text_config: main,
@@ -44,7 +44,7 @@ export const mutations = {
 	},
 };
 export const actions = {
-	async setTextConfig({state, commit}, payload = 'ру') {
+	async setTextConfig({state, commit}, payload = 'укр') {
 		if (payload === 'ру') {
 			let {main} = await import('@/config/ruText');
 			commit('SET_CONFIG', main)

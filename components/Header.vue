@@ -21,7 +21,7 @@
 			<div class="additional">
 				<LanguageChanger
 					:options="['ру', 'укр']"
-					:default="'ру'"
+					:default="'укр'"
 					class="select"
 					@input="setTextConfig($event)"
 				/>
